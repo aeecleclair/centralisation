@@ -1,0 +1,165 @@
+body {
+    font-family: Roboto,
+        tahoma,
+        Liberation Sans,
+        sans-serif;
+}
+
+header {
+    position: sticky;
+    text-align: center;
+
+    padding: 20px;
+
+    background-color: #982826;
+    color: white;
+}
+
+header h1 {
+    font-size: 1.5em;
+}
+
+#content {
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+.link {
+    margin: 20px 0;
+}
+
+.link-box {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+
+    height: 70px;
+}
+
+.link-clickable-region {
+    display: flex;
+    flex-flow: row;
+    flex: auto;
+    text-decoration: none;
+}
+
+.link-icon {
+    flex: initial;
+
+    width: 70px;
+    height: 70px;
+}
+
+.link-text {
+    flex: auto;
+    text-align: center;
+
+    font-size: 1.2em;
+    line-height: 70px;
+}
+
+.link-information {
+    flex: initial;
+    text-align: center;
+
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 100%;
+    border : none;
+    margin-right: 10px;
+
+    font-family: Italianno;
+    font-style: italic;
+}
+
+/* The Modal (background) */
+.link-modal {
+    display: none;
+    position: fixed;
+    overflow: auto;
+
+    z-index: 1;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+.modal-content {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    padding: 20px;
+    width : 80%;
+
+    border-radius: 20px;
+
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* The Close Button */
+.close-button {
+    position: absolute;
+    text-align: center;
+
+    top: 10px;
+    right: 10px;
+
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    line-height: 30px;
+    border : none;
+
+    font-size: 20px;
+}
+
+.modal-footer {
+    text-align: center;
+}
+
+.go-out-button {
+    width: 200px;
+    height: 35px;
+    border-radius: 35px;
+    border: none;
+
+    text-align: center;
+    line-height: 35px;
+    font-size: 1.1em;
+}
+
+
+.modal-header {
+    padding: 2px 16px;
+    text-align: center;
+}
+
+.modal-body {
+    padding: 20px 16px;
+    text-align: justify;
+    line-height: 1.2em;
+}
+
+/* Modal Animation */
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 50%;
+        opacity: 1
+    }
+}

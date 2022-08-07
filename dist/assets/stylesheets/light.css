@@ -1,0 +1,56 @@
+.link-box {
+    background-color: var(--secondary-color-light);
+}
+
+.link-clickable-region {
+    color: var(--font-color);
+}
+
+/* .link-icon {
+    background-color: var(--secondary-color);
+} */
+
+.link-information {
+    background-color:var(--main-color-extra-light);
+    color: var(--main-color);
+}
+
+.link-modal {
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: var(--main-color-extra-light);
+}
+
+.close-button {
+    color: var(--main-color);
+    background-color: white;
+}
+.close-button:hover,
+.close-button:focus {
+    color: var(--font-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.go-out-button {
+    background-color: var(--main-color-light);
+    color: var(--main-color);
+}
+
+.go-out-button:hover {
+    border: solid var(--main-color) 1px;
+}
+
+body {
+    --main-color : #982826;
+    --main-color-light : #f5dbdb;
+    --main-color-extra-light: #fef6f6;
+    
+    --secondary-color : #D9D9D9;
+    --secondary-color-light : #FBFBFB;
+
+    --font-color : black;
+}

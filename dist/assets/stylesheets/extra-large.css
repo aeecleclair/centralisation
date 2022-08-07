@@ -1,0 +1,18 @@
+#content {
+    padding: 0 100px;
+}
+
+.links-cluster {
+    margin: 40px 0;
+}
+
+.link {
+    margin: 0;
+}
+
+.links-cluster {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 40px;
+    row-gap: 40px;
+}
