@@ -1,0 +1,32 @@
+# This is a basic workflow that is manually triggered
+
+name: Build Static file
+on: [push]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the code
+        uses: actions/checkout@v3
+        
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      
+      - name: Install poetry
+        run : curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
+        
+      - name : Install dependencies
+        run : poetry install
+        
+      - name : Build static files
+        run : poetry run python ./build.py
+        
+      - name : Upload static files
+        uses: actions/upload-artifact@v3
+        with:
+          name: my-artifact
+          path: path/to/artifact/
