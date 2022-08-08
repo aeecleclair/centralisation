@@ -23,8 +23,10 @@
     </header>
 
     <div id="content">
+        {% for category_name in links %}
+        <h2>{{ category_name }}</h2>
         <div id="main-links" class="links-cluster">
-            {% for link in links.main %}
+            {% for link in links[category_name] %}
                 <div class="link" >
                     <div class="link-modal">
 
@@ -51,102 +53,10 @@
                         </a>
                         <button class="link-information">i</button>
                     </div>
-                </div>{% endfor %}
+                </div>
+            {% endfor %}
         </div>
-
-        <h2>Liens associatifs</h2>
-        <div id="association-links" class="links-cluster">
-            {% for link in links.association %}
-                <div class="link" >
-                    <div class="link-modal">
-
-                        <!-- Modal content -->
-                        <div class="modal-content">
-                            <button class="close-button">&times;</button>
-                            <div class="modal-header">
-                            
-                                <h2>{{ link.name }}</h2>
-                            </div>
-                                <div class="modal-body">
-                                <p>{{ link.description }}</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="go-out-button" onclick="window.location='{{link.url}}'" >Visiter</button> 
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="link-box">
-                        <a class="link-clickable-region" href="{{link.url}}">
-                            <img class="link-icon" src="assets/icons/{{ link.icon }}" alt="Icône de {{link.name}}"/>
-                            <span class="link-text">{{ link.name }}</span>
-                        </a>
-                        <button class="link-information">i</button>
-                    </div>
-                </div>{% endfor %}
-        </div>
-        <h2>Réseaux Sociaux</h2>
-        <div id="social-network-links" class="links-cluster">
-            {% for link in links.social_networks %}
-                <div class="link" >
-                    <div class="link-modal">
-
-                        <!-- Modal content -->
-                        <div class="modal-content">
-                            <button class="close-button">&times;</button>
-                            <div class="modal-header">
-                            
-                                <h2>{{ link.name }}</h2>
-                            </div>
-                                <div class="modal-body">
-                                <p>{{ link.description }}</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="go-out-button" onclick="window.location='{{link.url}}'" >Visiter</button> 
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="link-box">
-                        <a class="link-clickable-region" href="{{link.url}}">
-                            <img class="link-icon" src="assets/icons/{{ link.icon }}" alt="Icône de {{link.name}}"/>
-                            <span class="link-text">{{ link.name }}</span>
-                        </a>
-                        <button class="link-information">i</button>
-                    </div>
-                </div>{% endfor %}
-        </div>
-        <h2>Autres</h2> 
-        <div id ="other-links" class="links-cluster">
-            {% for link in links.others %}
-                <div class="link" >
-                    <div class="link-modal">
-
-                        <!-- Modal content -->
-                        <div class="modal-content">
-                            <button class="close-button">&times;</button>
-                            <div class="modal-header">
-                            
-                                <h2>{{ link.name }}</h2>
-                            </div>
-                                <div class="modal-body">
-                                <p>{{ link.description }}</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="go-out-button" onclick="window.location='{{link.url}}'" >Visiter</button> 
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="link-box">
-                        <a class="link-clickable-region" href="{{link.url}}">
-                            <img class="link-icon" src="assets/icons/{{ link.icon }}" alt="Icône de {{link.name}}"/>
-                            <span class="link-text">{{ link.name }}</span>
-                        </a>
-                        <button class="link-information">i</button>
-                    </div>
-                </div>{% endfor %}
-        </div>
+        {% endfor %}
     </div>
     
 </body>

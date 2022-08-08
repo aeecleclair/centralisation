@@ -1,5 +1,5 @@
 {
-    "main" : [
+    "École" : [
         {
             "name" : "Zimbra",
             "description" : "Zimbra est le serveur mail de l'école.",
@@ -30,7 +30,7 @@
             "icon" : ".png",
             "url" : "https://www.ec-lyon.fr/sites/default/files/plan_campus_centrale_lyon_2021_web_0.pdf"
         }],
-    "association" : [
+    "Liens associatifs" : [
         {
             "name" : "MyECL",
             "description" : "MyECL est un site regroupand divers outils pour l'associatif centralien : calendrier, réservation de salle, prêt de matos, panier AMAP...",
@@ -44,7 +44,7 @@
             "url" : "https://pixelcloud.eclair.ec-lyon.fr"
         }
     ],
-    "social_networks" : [
+    "Réseaux Sociaux" : [
         {
             "name" : "FB - BDL",
             "description" : "À la recherche de ta izly, ta chaussure gauche ou encore tes souvenirs ? Oublie les groupes Admis ECL ou je ne sais quoi, c'est ici.",
@@ -76,7 +76,7 @@
             "url" : "https://www.instagram.com/bds_ecl/"
         }
     ],
-    "others" : [
+    "Autres" : [
         {
             "name" : "Scolarité",
             "description" : "Les bulletins de notes de chaque semestre figurent sur Scolarité. Attention, le VPN de l'école est nécéssaire pour y accéder.",
