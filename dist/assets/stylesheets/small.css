@@ -1,12 +1,15 @@
 body {
-    font-family: Roboto,
-        tahoma,
-        Liberation Sans,
-        sans-serif;
+    font-family: sans-serif, arial;
+}
+
+button {
+    cursor: pointer;
 }
 
 header {
     position: sticky;
+    top : 0;
+
     text-align: center;
 
     padding: 20px;
@@ -25,10 +28,16 @@ header h1 {
 
 h2 {
     font-size: 1.4em;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.link {
-    margin: 20px 0;
+.links-cluster{
+    margin-bottom : 40px;
+}
+
+.link:not(:last-child) {
+    margin-bottom: 25px;
 }
 
 .link-box {
@@ -51,6 +60,14 @@ h2 {
 
     width: 70px;
     height: 70px;
+
+    padding : 7px;
+
+    box-sizing: border-box;
+}
+.link-icon img{
+    width: 56px;
+    height: 56px;
 }
 
 .link-text {
@@ -118,7 +135,6 @@ h2 {
     height: 30px;
     width: 30px;
     border-radius: 100%;
-    line-height: 30px;
     border : none;
 
     font-size: 20px;
@@ -145,6 +161,10 @@ h2 {
     text-align: center;
 }
 
+.modal-header h3 {
+    font-size: 1.4em;
+}
+
 .modal-body {
     padding: 20px 16px;
     text-align: justify;
@@ -162,4 +182,17 @@ h2 {
         top: 50%;
         opacity: 1
     }
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+}
+
+footer i {
+    font-style: italic;
+}
+
+footer a {
+    color : inherit;
 }

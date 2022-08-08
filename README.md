@@ -71,4 +71,10 @@ services:
 
 ## TODO :
 - Ajouter les icones pour chaque liens
-- Vérifier et corriger les fautes d'orthographe
+- Vérifier et corriger les fautes d'orthograph
+- Compiler le projet depuis les CI
+
+
+Amélioration CSS :
+- Centrer certains éléments (à préciser)
+- Améliorer le contraste (à préciser)

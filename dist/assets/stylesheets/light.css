@@ -37,11 +37,16 @@
 
 .go-out-button {
     background-color: var(--main-color-light);
+    border: solid var(--main-color-light) 1px;
     color: var(--main-color);
 }
 
 .go-out-button:hover {
     border: solid var(--main-color) 1px;
+}
+
+footer {
+    background-color : var(--secondary-color-light);
 }
 
 body {

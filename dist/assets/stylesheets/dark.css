@@ -11,7 +11,11 @@ body {
 
 .close-button {
     color: white;
-    background-color: var(--main-color-extra-light);
+    background-color: var(--main-color-light);
+}
+
+.modal-content{
+    background-color: #1e1e1e;
 }
 
 

@@ -40,7 +40,7 @@
                             <button class="close-button">&times;</button>
                             <div class="modal-header">
                             
-                                <h2>{{ link.name }}</h2>
+                                <h3>{{ link.name }}</h3>
                             </div>
                                 <div class="modal-body">
                                 <p>{{ link.description }}</p>
@@ -53,7 +53,9 @@
                     </div>
                     <div class="link-box">
                         <a class="link-clickable-region" href="{{link.url}}">
-                            <img class="link-icon" src="assets/icons/{{ link.icon }}" alt="Icône de {{link.name}}"/>
+                            <div class="link-icon" >
+                                <img src="assets/icons/{{ link.icon }}" alt="Icône de {{link.name}}"/>
+                            </div>
                             <span class="link-text">{{ link.name }}</span>
                         </a>
                         <button class="link-information">i</button>
