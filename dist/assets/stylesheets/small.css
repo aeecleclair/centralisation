@@ -84,7 +84,6 @@ h2 {
 
     width: 30px;
     height: 30px;
-    line-height: 30px;
     border-radius: 100%;
     border : none;
     margin-right: 10px;
@@ -151,7 +150,6 @@ h2 {
     border: none;
 
     text-align: center;
-    line-height: 35px;
     font-size: 1.1em;
 }
 
