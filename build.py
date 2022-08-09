@@ -4,6 +4,8 @@ import os
 import yaml
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
+if os.path.exists("./dist"):
+    shutil.rmtree("./dist")
 os.mkdir("./dist")
 
 # Build the index file with Jinja2
