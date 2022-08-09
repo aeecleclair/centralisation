@@ -24,7 +24,7 @@ La conception du site à également suivi une volonté de choisir un design simp
 Pour mettre à jours le site, clonez le projet sur votre PC.
 
 ```bash
-git clone ...
+git clone https://github.com/aeecleclair/Centralisation.git
 ```
 
 Déplacez vous dans le dossier du projet
