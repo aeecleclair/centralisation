@@ -54,7 +54,11 @@
                     <div class="link-box">
                         <a class="link-clickable-region" href="{{link.url}}">
                             <div class="link-icon" >
-                                <img src="assets/icons/{{ link.icon }}" alt="Icône de {{link.name}}"/>
+                                {%if link.img %}
+                                <img src="assets/icons/{{ link.img }}" alt="Icône de {{link.name}}"/>
+                                {% elif link.svg %}
+                                <img src="assets/icons/{{ link.svg }}" alt="Icône de {{link.name}}" class="svg"/>
+                                {% endif %}
                             </div>
                             <span class="link-text">{{ link.name }}</span>
                         </a>

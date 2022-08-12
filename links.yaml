@@ -1,7 +1,7 @@
 École:
   - name: Zimbra
     description: Zimbra est le serveur mail de l'école.
-    icon: ".png"
+    svg: "mail.svg"
     url: https://messagerie.ec-lyon.fr
 
   - name: Moodle
@@ -9,28 +9,28 @@
       "Sur le moodle on retrouve le contenue des différents cours. Il est
       divisé en trois : Pédagogie1 pour les cours de 1A, Pédagodie2 pour la 2A, Pédagogie3
       pour la 3A."
-    icon: ".png"
+    img: "moodle.png"
     url: https://moodle.ec-lyon.fr
 
   - name: Scol
     description:
       Scol permet d'accéder à son planning. Dans l'onglet "Offre de Formation",
       on trouve aussi les descriptions des cours de 2 et 3a.
-    icon: ".png"
+    svg: "calendar.svg"
     url: https://scol.ec-lyon.fr
 
   - name: Campus
     description:
       L'intranet de l'école répond à beaucoup de questions que l'on peut
       se poser. Il suffit de bien chercher.
-    icon: ".png"
+    img: "centrale.png"
     url: https://campus.ec-lyon.fr
 
   - name: Plan
     description:
       Le plan de l'école pour ne pas perdre son temps à chercher le J12 ou
       le G8.
-    icon: ".png"
+    svg: "map.svg"
     url: https://www.ec-lyon.fr/sites/default/files/plan_campus_centrale_lyon_2021_web_0.pdf
 
 Liens associatifs:
@@ -38,12 +38,12 @@ Liens associatifs:
     description:
       "MyECL est un site regroupand divers outils pour l'associatif centralien
       : calendrier, réservation de salle, prêt de matos, panier AMAP..."
-    icon: ".png"
+    svg: "people.svg"
     url: https://myecl.fr
 
-  - name: Pixel Cloud
+  - name: Pixels Cloud
     description: Toutes les photos et vidéos des évènements sont ici !
-    icon: ".png"
+    img: "pixels.png"
     url: https://pixelcloud.eclair.ec-lyon.
 
 Réseaux Sociaux:
@@ -51,7 +51,7 @@ Réseaux Sociaux:
     description:
       À la recherche de ta izly, ta chaussure gauche ou encore tes souvenirs
       ? Oublie les groupes Admis ECL ou je ne sais quoi, c'est ici.
-    icon: ".png"
+    svg: "facebook.svg"
     url: https://www.facebook.com/groups/1524567274449574
 
   - name: FB - AQH
@@ -59,22 +59,22 @@ Réseaux Sociaux:
       AQH ?! est le groupe facebook réserver à la promotion des évènements
       associatifs de l'école.  On y trouve par exemple des annonces pendant les campagnes,
       des organisations de petit-dej, des week-end BDS, des semaines 1A etc ...
-    icon: ".png"
+    svg: "facebook.svg"
     url: https://www.facebook.com/groups/AQHAQHAQH
 
   - name: FB - MBP !
     description: " Mamie Bons Plans ! est réserver à la promotion des partenariats centraliens."
-    icon: ".png"
+    svg: "facebook.svg"
     url: https://www.facebook.com/groups/mamiebonsplans
 
   - name: Instagram BDE
     description: Page Instagram du BDE.
-    icon: ".png"
+    img: "bde.png"
     url: https://www.instagram.com/bdecentralelyon/
 
   - name: Instagram BDS
     description: Page Instagram du BDS.
-    icon: ".png"
+    img: "bds.png"
     url: https://www.instagram.com/bds_ecl/
 
 Autres:
@@ -82,26 +82,26 @@ Autres:
     description:
       Les bulletins de notes de chaque semestre figurent sur Scolarité. Attention,
       le VPN de l'école est nécéssaire pour y accéder.
-    icon: ".png"
-    url: https://wwww.facebook.com
+    svg: "student2.svg"
+    url: https://scolarite.ec-lyon.fr
 
   - name: DSI
     description:
       Le site de la DSI regroupe des guides pour se connecter à internet
       ou pour télécharger et installer des logiciels utiles.
-    icon: ".png"
+    svg: "dsi.svg"
     url: https://dsi.ec-lyon.fr
 
   - name: Bibliothèque
     description:
       Le site de la Bibliothèque Universitaire pour réserver un livre, vérifier
       les disponibilités ou passer une demande d'achat
-    icon: ".png"
+    img: "bibli.png"
     url: https://bibli.ec-lyon.fr
 
   - name: Zoom
     description:
       L'instance Zoom de l'école permet à chacun de programmer des réunions
       Zoom sans contrainte ni en temps ni en nombre de participants.
-    icon: ".png"
+    img: "zoom.png"
     url: https://bibli.ec-lyon.fr
