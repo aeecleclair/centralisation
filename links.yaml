@@ -9,7 +9,7 @@
       "Sur le moodle on retrouve le contenue des différents cours. Il est
       divisé en trois : Pédagogie1 pour les cours de 1A, Pédagodie2 pour la 2A, Pédagogie3
       pour la 3A."
-    img: "moodle.png"
+    img: "moodle.webp"
     url: https://moodle.ec-lyon.fr
 
   - name: Scol
@@ -21,7 +21,7 @@
 
   - name: Campus
     description: Campus est l'intranet de l'école. On y trouve toutes les réponses concernant le parcours à Centrale Lyon, les démarches administratives pour les stages et les départs à l'étranger et bien plus encore.
-    img: "centrale.png"
+    img: "centrale.webp"
     url: https://campus.ec-lyon.fr
 
   - name: Plan
@@ -41,7 +41,7 @@ Liens associatifs:
 
   - name: Pixelscloud
     description: Toutes les photos et vidéos des évènements sont ici !
-    img: "pixels.png"
+    img: "pixels.webp"
     url: https://pixelscloud.eclair.ec-lyon.fr
 
 Réseaux Sociaux:
@@ -67,12 +67,12 @@ Réseaux Sociaux:
 
   - name: Instagram BDE
     description: Suit l'actualité associatif de l'école sur le compte Instagram du BDE !
-    img: "bde.png"
+    img: "bde.webp"
     url: https://www.instagram.com/bdecentralelyon/
 
   - name: Instagram BDS
     description: Suit l'actualité sportive de l'école sur le compte Instagram du BDS !
-    img: "bds.png"
+    img: "bds.webp"
     url: https://www.instagram.com/bds_ecl/
 
 Autres:
@@ -94,12 +94,12 @@ Autres:
     description:
       Le site de la Bibliothèque Universitaire permet de réserver un livre, vérifier
       les disponibilités ou passer une demande d'achat.
-    img: "bibli.png"
+    img: "bibli.webp"
     url: https://bibli.ec-lyon.fr
 
   - name: Zoom
     description:
       L'instance Zoom de l'école permet à tous de programmer des réunions
       Zoom sans contrainte ni en temps ni en nombre de participants.
-    img: "zoom.png"
+    img: "zoom.webp"
     url: https://bibli.ec-lyon.fr
