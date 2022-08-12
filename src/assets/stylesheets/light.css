@@ -45,12 +45,8 @@
     border: solid var(--main-color) 1px;
 }
 
-footer {
-    background-color : var(--secondary-color-light);
-}
-
 body {
-    --main-color : #982826;
+    --main-color : #951028;
     --main-color-light : #f5dbdb;
     --main-color-extra-light: #fef6f6;
     

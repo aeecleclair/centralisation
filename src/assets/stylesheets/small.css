@@ -15,8 +15,11 @@ header {
 
     padding: 20px;
 
-    background-color: #982826;
+    font-variant: small-caps;
+    background-color: #951028;
     color: white;
+
+    border-bottom: #9f283d 1px solid;
 }
 
 header h1 {
@@ -187,6 +190,10 @@ h2 {
 footer {
     text-align: center;
     padding: 30px;
+
+    color : white;
+    border-top: #9f283d 1px solid;
+    background-color : #951028;
 }
 
 footer i {
