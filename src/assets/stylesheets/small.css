@@ -47,6 +47,7 @@ h2 {
     align-items: center;
 
     height: 70px;
+    border-radius: 6px;
 }
 
 .link-clickable-region {
