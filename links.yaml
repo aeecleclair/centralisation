@@ -20,9 +20,7 @@
     url: https://scol.ec-lyon.fr
 
   - name: Campus
-    description:
-      L'intranet de l'école répond à beaucoup de questions que l'on peut
-      se poser. Il suffit de bien chercher.
+    description: Campus est l'intranet de l'école. On y trouve toutes les réponses concernant le parcours à Centrale Lyon, les démarches administratives pour les stages et les départs à l'étranger et bien plus encore.
     img: "centrale.png"
     url: https://campus.ec-lyon.fr
 
@@ -41,7 +39,7 @@ Liens associatifs:
     svg: "people.svg"
     url: https://myecl.fr
 
-  - name: Pixels Cloud
+  - name: Pixelscloud
     description: Toutes les photos et vidéos des évènements sont ici !
     img: "pixels.png"
     url: https://pixelcloud.eclair.ec-lyon.
@@ -49,8 +47,8 @@ Liens associatifs:
 Réseaux Sociaux:
   - name: FB - BDL
     description:
-      À la recherche de ta izly, ta chaussure gauche ou encore tes souvenirs
-      ? Oublie les groupes Admis ECL ou je ne sais quoi, c'est ici.
+      "À la recherche de ta izly, ta chaussure gauche ou encore tes souvenirs
+      ? Oublie les groupes Admis ECL ou je ne sais quoi, c'est ici."
     svg: "facebook.svg"
     url: https://www.facebook.com/groups/1524567274449574
 
@@ -63,17 +61,17 @@ Réseaux Sociaux:
     url: https://www.facebook.com/groups/AQHAQHAQH
 
   - name: FB - MBP !
-    description: " Mamie Bons Plans ! est réserver à la promotion des partenariats centraliens."
+    description: Mamie Bons Plans ! est réserver à la promotion des partenariats centraliens.
     svg: "facebook.svg"
     url: https://www.facebook.com/groups/mamiebonsplans
 
   - name: Instagram BDE
-    description: Page Instagram du BDE.
+    description: Suit l'actualité associatif de l'école sur le compte Instagram du BDE !
     img: "bde.png"
     url: https://www.instagram.com/bdecentralelyon/
 
   - name: Instagram BDS
-    description: Page Instagram du BDS.
+    description: Suit l'actualité sportive de l'école sur le compte Instagram du BDS !
     img: "bds.png"
     url: https://www.instagram.com/bds_ecl/
 
@@ -87,21 +85,21 @@ Autres:
 
   - name: DSI
     description:
-      Le site de la DSI regroupe des guides pour se connecter à internet
-      ou pour télécharger et installer des logiciels utiles.
+      Le site de la DSI regroupe des guides pour se connecter à internet, utiliser le VPN,
+      ou pour télécharger et installer les logiciels utiles.
     svg: "dsi.svg"
     url: https://dsi.ec-lyon.fr
 
   - name: Bibliothèque
     description:
-      Le site de la Bibliothèque Universitaire pour réserver un livre, vérifier
-      les disponibilités ou passer une demande d'achat
+      Le site de la Bibliothèque Universitaire permet de réserver un livre, vérifier
+      les disponibilités ou passer une demande d'achat.
     img: "bibli.png"
     url: https://bibli.ec-lyon.fr
 
   - name: Zoom
     description:
-      L'instance Zoom de l'école permet à chacun de programmer des réunions
+      L'instance Zoom de l'école permet à tous de programmer des réunions
       Zoom sans contrainte ni en temps ni en nombre de participants.
     img: "zoom.png"
     url: https://bibli.ec-lyon.fr
