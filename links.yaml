@@ -6,27 +6,26 @@
 
   - name: Moodle
     description:
-      "Sur le moodle on retrouve le contenue des différents cours. Il est
-      divisé en trois : Pédagogie1 pour les cours de 1A, Pédagodie2 pour la 2A, Pédagogie3
-      pour la 3A."
+      "Sur le moodle on retrouve le contenu des différents cours. Il est
+      divisé en trois serveurs : Pédagogie1, Pédagodie2 et Pédagogie3 pour les cours de 1A, 2A et 3A."
     img: "moodle.webp"
     url: https://moodle.ec-lyon.fr
 
   - name: Scol
     description:
-      Scol permet d'accéder à son planning. Dans l'onglet "Offre de Formation",
+      Scol permet d'accéder à son planning et déclarer des absences. Dans l'onglet "Offre de Formation",
       on trouve aussi les descriptions des cours de 2 et 3a.
     svg: "calendar.svg"
     url: https://scol.ec-lyon.fr
 
   - name: Campus
     description: Campus est l'intranet de l'école. On y trouve toutes les réponses concernant le parcours à Centrale Lyon, les démarches administratives pour les stages et les départs à l'étranger et bien plus encore.
-    img: "centrale.webp"
+    img: "centrale.svg"
     url: https://campus.ec-lyon.fr
 
   - name: Plan
     description:
-      Le plan de l'école pour ne pas perdre son temps à chercher le J12 ou
+      Le plan du campus pour ne pas perdre son temps à chercher le J12 ou
       le G8.
     svg: "map.svg"
     url: https://www.ec-lyon.fr/sites/default/files/plan_campus_centrale_lyon_2021_web_0.pdf
@@ -34,7 +33,7 @@
 Liens associatifs:
   - name: MyECL
     description:
-      "MyECL est un site regroupand divers outils pour l'associatif centralien
+      "MyECL est une plateforme dédiée à l'associatif centralien, on y trouve divers outils
       : calendrier, réservation de salle, prêt de matos, panier AMAP..."
     svg: "people.svg"
     url: https://myecl.fr
@@ -48,52 +47,52 @@ Réseaux Sociaux:
   - name: FB - BDL
     description:
       "À la recherche de ta izly, ta chaussure gauche ou encore tes souvenirs
-      ? Oublie les groupes Admis ECL ou je ne sais quoi, c'est ici."
+      ? BDL permet la communication entre les élèves sur tous les sujets du quotidien"
     svg: "facebook.svg"
     url: https://www.facebook.com/groups/1524567274449574
 
   - name: FB - AQH
     description:
-      AQH ?! est le groupe facebook réserver à la promotion des évènements
-      associatifs de l'école.  On y trouve par exemple des annonces pendant les campagnes,
-      des organisations de petit-dej, des week-end BDS, des semaines 1A etc ...
+      AQH ?! est le groupe Facebook réservé à la promotion des évènements
+      associatifs à l'école.  On y trouve par exemple des annonces pendant les campagnes,
+      des organisations de petit-dej, des week-ends BDS, des semaines 1A etc.
     svg: "facebook.svg"
     url: https://www.facebook.com/groups/AQHAQHAQH
 
   - name: FB - MBP !
-    description: Mamie Bons Plans ! est réserver à la promotion des partenariats centraliens.
+    description: Mamie Bons Plans ! est réservé à la promotion des partenariats centraliens.
     svg: "facebook.svg"
     url: https://www.facebook.com/groups/mamiebonsplans
 
   - name: Instagram BDE
-    description: Suit l'actualité associatif de l'école sur le compte Instagram du BDE !
+    description: Suis l'actualité associative de l'école sur le compte Instagram du BDE !
     img: "bde.webp"
     url: https://www.instagram.com/bdecentralelyon/
 
   - name: Instagram BDS
-    description: Suit l'actualité sportive de l'école sur le compte Instagram du BDS !
+    description: Suis l'actualité sportive de l'école sur le compte Instagram du BDS !
     img: "bds.webp"
     url: https://www.instagram.com/bds_ecl/
 
 Autres:
   - name: Scolarité
     description:
-      Les bulletins de notes de chaque semestre figurent sur Scolarité. Attention,
-      le VPN de l'école est nécéssaire pour y accéder.
+      Les bulletins de notes de chaque semestre et le certificat de scolarité figurent sur Scolarité. Attention,
+      le VPN de l'école est nécessaire pour y accéder.
     svg: "student2.svg"
     url: https://scolarite.ec-lyon.fr
 
   - name: DSI
     description:
-      Le site de la DSI regroupe des guides pour se connecter à internet, utiliser le VPN,
-      ou pour télécharger et installer les logiciels utiles.
+      Le site de la DSI regroupe des guides pour se connecter à internet, utiliser le VPN
+      ou pour installer et utiliser les logiciels utiles (Matlab, Zoom...).
     svg: "dsi.svg"
     url: https://dsi.ec-lyon.fr
 
   - name: Bibliothèque
     description:
       Le site de la Bibliothèque Universitaire permet de réserver un livre, vérifier
-      les disponibilités ou passer une demande d'achat.
+      les disponibilités ou passer une demande d'achat. Une importante collection de ressource numérique est aussi accessible depuis ce portail.
     img: "bibli.webp"
     url: https://bibli.ec-lyon.fr
 
@@ -102,4 +101,4 @@ Autres:
       L'instance Zoom de l'école permet à tous de programmer des réunions
       Zoom sans contrainte ni en temps ni en nombre de participants.
     img: "zoom.webp"
-    url: https://bibli.ec-lyon.fr
+    url: https://ec-lyon-fr.zoom.us/

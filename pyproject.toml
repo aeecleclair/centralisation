@@ -3,6 +3,7 @@ name = "centralisation"
 version = "0.1.0"
 description = ""
 authors = ["benjamindenise <benjamin.denise@protonmail.com>"]
+homepage = "https://centralisation.eclair.ec-lyon.fr/"
 
 [tool.poetry.dependencies]
 python = "^3.9"
