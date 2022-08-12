@@ -92,7 +92,7 @@ Autres:
   - name: Bibliothèque
     description:
       Le site de la Bibliothèque Universitaire permet de réserver un livre, vérifier
-      les disponibilités ou passer une demande d'achat. Une importante collection de ressource numérique est aussi accessible depuis ce portail.
+      les disponibilités ou passer une demande d'achat. Une importante collection de ressources numériques est aussi accessible depuis ce portail.
     img: "bibli.webp"
     url: https://bibli.ec-lyon.fr
 
