@@ -20,7 +20,7 @@
 
   - name: Campus
     description: Campus est l'intranet de l'école. On y trouve toutes les réponses concernant le parcours à Centrale Lyon, les démarches administratives pour les stages et les départs à l'étranger et bien plus encore.
-    img: "centrale.svg"
+    img: "centrale.webp"
     url: https://campus.ec-lyon.fr
 
   - name: Plan
