@@ -29,3 +29,12 @@ jobs:
         
       - name : Test the project
         run : poetry run python ./test.py
+      
+      - name : Build static files
+        run : poetry run python ./build.py
+        
+      - name : Upload static files
+        uses: actions/upload-artifact@v3
+        with:
+          name: Centralisation
+          path: dist/
