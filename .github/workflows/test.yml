@@ -10,6 +10,25 @@ jobs:
     timeout-minutes: 5
 
     steps:
+      # This workflow will send a comment in the pull request to allows to download the builded project
+      # If this workflow already commented in the PR, we search this comment to modify it instead of creating a new one
+      - name: Find Github action comment
+        uses: peter-evans/find-comment@v2
+        id: fc
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          comment-author: 'github-actions[bot]'
+      
+      # Create a new comment or modify the existing one
+      - name: Building comment
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          comment-id: ${{ steps.fc.outputs.comment-id }}
+          issue-number: ${{ github.event.pull_request.number }}
+          body: |
+            ## :hourglass: Building :hourglass:
+          edit-mode: replace
+      
       - name: Check out the code
         uses: actions/checkout@v3
     
@@ -38,3 +57,27 @@ jobs:
         with:
           name: Centralisation
           path: dist/
+          retention-days: 7
+
+      # Create a new comment or modify the existing one
+      - name: Success comment
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          comment-id: ${{ steps.fc.outputs.comment-id }}
+          issue-number: ${{ github.event.pull_request.number }}
+          body: |
+            ## :tada: Success :tada:
+            Download the builded project artifact : https://github.com/aeecleclair/Centralisation/actions/runs/${{ github.run_id }}
+          edit-mode: replace
+      
+      # Create a new comment or modify the existing one
+      # This action will only be executed if the workflow failed
+      - name: Failure comment
+        if: failure()
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          comment-id: ${{ steps.fc.outputs.comment-id }}
+          issue-number: ${{ github.event.pull_request.number }}
+          body: |
+            ## :x: Error :x:
+          edit-mode: replace
