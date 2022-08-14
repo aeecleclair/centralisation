@@ -1,0 +1,31 @@
+name: Test Centralisation
+
+on:
+  pull_request:
+    types: [opened, edited, ready_for_review, synchronize]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Check out the code
+        uses: actions/checkout@v3
+        
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+          cache: "poetry"
+
+      - name: Install poetry
+        uses: abatilo/actions-poetry@v2.1.5
+        with:
+          poetry-version: 1.1.14
+      
+      - name : Install dependencies
+        run : poetry install
+        
+      - name : Test the project
+        run : poetry run python ./test.py
