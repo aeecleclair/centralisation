@@ -1,53 +1,53 @@
 École:
   - name: Zimbra
     description: Zimbra est le serveur mail de l'école.
-    img: "mail.svg"
+    img: mail.svg
     url: https://messagerie.ec-lyon.fr
 
   - name: Moodle
     description:
       "Sur le moodle on retrouve le contenu des différents cours. Il est
       divisé en trois serveurs : Pédagogie1, Pédagodie2 et Pédagogie3 pour les cours de 1A, 2A et 3A."
-    img: "moodle.webp"
+    img: moodle.webp
     url: https://moodle.ec-lyon.fr
 
   - name: Scol
     description:
       Scol permet d'accéder à son planning et déclarer des absences. Dans l'onglet "Offre de Formation",
       on trouve aussi les descriptions des cours de 2 et 3a.
-    img: "calendar.svg"
+    img: calendar.svg
     url: https://scol.ec-lyon.fr
 
   - name: Campus
     description: Campus est l'intranet de l'école. On y trouve toutes les réponses concernant le parcours à Centrale Lyon, les démarches administratives pour les stages et les départs à l'étranger et bien plus encore.
-    img: "centrale.webp"
+    img: centrale.webp
     url: https://campus.ec-lyon.fr
 
   - name: Plan
     description:
       Le plan du campus pour ne pas perdre son temps à chercher le J12 ou
       le G8.
-    img: "map.svg"
+    img: map.svg
     url: https://www.ec-lyon.fr/sites/default/files/plan_campus_centrale_lyon_2021_web_0.pdf
 
 Liens associatifs:
   - name: MyECL
     description:
-      "MyECL est une plateforme dédiée à l'associatif centralien, on y trouve divers outils
-      : calendrier, réservation de salle, prêt de matos, panier AMAP..."
-    img: "people.svg"
+      "MyECL est une plateforme dédiée à l'associatif centralien, on y trouve divers outils : 
+      calendrier, réservation de salle, prêt de matos, panier AMAP..."
+    img: people.svg
     url: https://myecl.fr
 
   - name: Pixelscloud
     description: Toutes les photos et vidéos des évènements sont ici !
-    img: "pixels.svg"
     url: https://pixelscloud.eclair.ec-lyon.fr
+    img: pixels.svg
 
 Réseaux Sociaux:
   - name: FB - BDL
     description:
-      "À la recherche de ta izly, ta chaussure gauche ou encore tes souvenirs
-      ? BDL permet la communication entre les élèves sur tous les sujets du quotidien"
+      À la recherche de ta izly, ta chaussure gauche ou encore tes souvenirs
+      ? BDL permet la communication entre les élèves sur tous les sujets du quotidien
     img: "facebook.svg"
     url: https://www.facebook.com/groups/1524567274449574
 
@@ -56,22 +56,22 @@ Réseaux Sociaux:
       AQH ?! est le groupe Facebook réservé à la promotion des évènements
       associatifs à l'école.  On y trouve par exemple des annonces pendant les campagnes,
       des organisations de petit-dej, des week-ends BDS, des semaines 1A etc.
-    img: "facebook.svg"
+    img: facebook.svg
     url: https://www.facebook.com/groups/AQHAQHAQH
 
   - name: FB - MBP !
     description: Mamie Bons Plans ! est réservé à la promotion des partenariats centraliens.
-    img: "facebook.svg"
+    img: facebook.svg
     url: https://www.facebook.com/groups/mamiebonsplans
 
   - name: Instagram BDE
     description: Suis l'actualité associative de l'école sur le compte Instagram du BDE !
-    img: "bde.webp"
+    img: bde.webp
     url: https://www.instagram.com/bdecentralelyon/
 
   - name: Instagram BDS
     description: Suis l'actualité sportive de l'école sur le compte Instagram du BDS !
-    img: "bds.webp"
+    img: bds.webp
     url: https://www.instagram.com/bds_ecl/
 
 Autres:
@@ -79,26 +79,26 @@ Autres:
     description:
       Les bulletins de notes de chaque semestre et le certificat de scolarité figurent sur Scolarité. Attention,
       le VPN de l'école est nécessaire pour y accéder.
-    img: "student.svg"
+    img: student.svg
     url: https://scolarite.ec-lyon.fr
 
   - name: DSI
     description:
       Le site de la DSI regroupe des guides pour se connecter à internet, utiliser le VPN
       ou pour installer et utiliser les logiciels utiles (Matlab, Zoom...).
-    img: "dsi.svg"
+    img: dsi.svg
     url: https://dsi.ec-lyon.fr
 
   - name: Bibliothèque
     description:
       Le site de la Bibliothèque Universitaire permet de réserver un livre, vérifier
       les disponibilités ou passer une demande d'achat. Une importante collection de ressources numériques est aussi accessible depuis ce portail.
-    img: "bibli.webp"
+    img: bibli.webp
     url: https://bibli.ec-lyon.fr
 
   - name: Zoom
     description:
       L'instance Zoom de l'école permet à tous de programmer des réunions
       Zoom sans contrainte ni en temps ni en nombre de participants.
-    img: "zoom.webp"
+    img: zoom.webp
     url: https://ec-lyon-fr.zoom.us/
