@@ -1,5 +1,5 @@
-import shutil
 import os
+import shutil
 
 import yaml
 from jinja2 import Environment, FileSystemLoader, select_autoescape

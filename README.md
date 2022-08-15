@@ -10,14 +10,15 @@ Il est recommandé d'ajouter Centralisation à ses favoris ou de configurer son 
 
 La page principale est générée automatiquement par un script `Python` (3.9) et utilise la librairie `Jinja2` pour automatiser l'écriture du `html`. Une documentation complète de la librairie est disponible sur le site officiel. Cependant, notre projet emploie uniquement les fonctionnalités de base.
 
-Le choix d'une génération automatique s'explique par la redondance du code HTML de la page et dans l'ambition de faire un projet clair, facilement compréhensible et modifiable. 
+Le choix d'une génération automatique s'explique par la redondance du code HTML de la page et dans l'ambition de faire un projet clair, facilement compréhensible et modifiable.
 
-Pour faire bref : 
+Pour faire bref :
+
 - Les différents liens, leurs noms et descriptions sont écrits au format `YAML` dans le fichier [links.yaml](./links.yaml).
 - Le script Python `build.py` lit le fichier YAML et construit la page HTML à partir de celui-ci.
 - Le fichier final est enregistré dans le dossier `./dist` aux côtés des feuilles de styles CSS et des images.
 
-La conception du site à également suivi une volonté de choisir un design simple et *responsive*. Plusieurs feuilles de styles sont associées à des tailles d'écran différents. Les couleurs de la page suivent les couleurs des sites institutionnels et deux versions existent : un mode clair et un mode sombre.
+La conception du site à également suivi une volonté de choisir un design simple et _responsive_. Plusieurs feuilles de styles sont associées à des tailles d'écran différents. Les couleurs de la page suivent les couleurs des sites institutionnels et deux versions existent : un mode clair et un mode sombre.
 
 ## Environnement de compilation
 
@@ -45,7 +46,7 @@ Avec Poetry :
 poetry run python ./build.py
 ```
 
-Sinon simplement, 
+Sinon simplement,
 
 ```bash
 python ./build.py
@@ -55,17 +56,17 @@ Récupérer le résultat dans le dossier `./dist`
 
 ## Docker
 
-Pour faciliter le déploiement, une image docker est fournie. Pour créer l'image :  `docker build -t centralisation .` et créer le conteneur `docker run -it -d -p 80:80 centralisation`.
+Pour faciliter le déploiement, une image docker est fournie. Pour créer l'image : `docker build -t centralisation .` et créer le conteneur `docker run -it -d -p 80:80 centralisation`.
 
 Un fichier `docker-compose.yml` peut être édité :
 
 ```yml
-version: '3'
+version: "3"
 services:
   web:
     image: centralisation
     container_name: centralisation
     restart: unless-stopped
     ports:
-      - "8080:80"
+      - "80:80"
 ```
