@@ -38,10 +38,10 @@ Liens associatifs:
     img: people.svg
     url: https://myecl.fr
 
-  - name: Pixelscloud
+  - name: 1Year1Book
     description: Toutes les photos et vidéos des évènements sont ici !
-    url: https://pixelscloud.eclair.ec-lyon.fr
     img: pixels.svg
+    url: https://centrale-lyon.1year1book.com/
 
 Réseaux Sociaux:
   - name: FB - BDL
@@ -102,3 +102,18 @@ Autres:
       Zoom sans contrainte ni en temps ni en nombre de participants.
     img: zoom.webp
     url: https://ec-lyon-fr.zoom.us/
+
+Sites associatifs:
+  - name: Commuz'
+    description:
+      La Commuz' est une comédie musicale organisée chaque année par une équipe de 80 étudiants 
+      de l'École Centrale de Lyon et de emlyon business school.
+    img: commuz.svg
+    url: https://commuz.fr/
+  
+  - name: RAID
+    description:
+      Le Raid Centrale Lyon est un événement organisé chaque année sur un weekend d’octobre 
+      qui regroupe plus de 300 participants et bénévoles issus d’écoles d’ingénieurs et de commerce françaises. 
+    img: raid.webp
+    url: https://raid.myecl.fr/
