@@ -1,0 +1,10 @@
+{
+  "editor.detectIndentation": true,
+  "python.formatting.provider": "black",
+  "editor.formatOnSave": true,
+  "editor.insertSpaces": true,
+  // We don't want to format svg assets
+  "[xml]": {
+    "editor.formatOnSave": false
+  }
+}
