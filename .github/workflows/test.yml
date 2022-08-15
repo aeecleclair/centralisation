@@ -47,7 +47,7 @@ jobs:
         run : poetry install
         
       - name : Test the project
-        run : poetry run python ./test.py
+        run : poetry run python ./check_assets.py
       
       - name : Build static files
         run : poetry run python ./build.py

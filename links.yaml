@@ -71,7 +71,6 @@ Réseaux Sociaux:
 
   - name: Instagram BDS
     description: Suis l'actualité sportive de l'école sur le compte Instagram du BDS !
-    img: "bds.webp"
     url: https://www.instagram.com/bds_ecl/
 
 Autres:
@@ -79,7 +78,7 @@ Autres:
     description:
       Les bulletins de notes de chaque semestre et le certificat de scolarité figurent sur Scolarité. Attention,
       le VPN de l'école est nécessaire pour y accéder.
-    img: "student2.svg"
+    img: "student.svg"
     url: https://scolarite.ec-lyon.fr
 
   - name: DSI
