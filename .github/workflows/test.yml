@@ -4,6 +4,12 @@ on:
   pull_request:
     types: [opened, edited, ready_for_review, synchronize]
 
+# By default pull requests made by Dependabot have a GITHUB_TOKEN with read only permissions
+# To be able to send comments `create-or-update-comment` action needs at least a `pull-requests: write` permission
+# See https://github.com/peter-evans/create-or-update-comment/issues/103
+permissions:
+  pull-requests: write
+
 jobs:
   test:
     runs-on: ubuntu-latest
