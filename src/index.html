@@ -61,8 +61,8 @@
                 <div class="link-box">
                     <a class="link-clickable-region" href="{{link.url}}">
                         <div class="link-icon">
-                            <img src="assets/icons/{{ link.img }}" alt="Icône de {{link.name}}" {{ 'class=svg' if
-                                link.img[-4:]==".svg" }} />
+                            <img src="assets/icons/{{ link.icon }}" alt="Icône de {{link.name}}" {{ 'class=invert-on-dark' if
+                                "invert-on-dark" in link and link["invert-on-dark"]}} />
                         </div>
                         <span class="link-text">{{ link.name }}</span>
                     </a>
