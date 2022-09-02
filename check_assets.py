@@ -7,5 +7,7 @@ with open("links.yaml", "r", encoding="utf8") as links_file:
 
 for category_name in data:
     for link in data[category_name]:
-        if not exists("src/assets/icons/" + link["img"]):
-            raise ValueError(f"File {link['img']} is missing from the assets directory")
+        if not exists("src/assets/icons/" + link["icon"]):
+            raise ValueError(
+                f"File {link['icon']} is missing from the assets directory"
+            )
