@@ -18,7 +18,7 @@ body {
   background-color: #1e1e1e;
 }
 
-.svg {
+.invert-on-dark {
   filter: invert(100%);
 }
 
