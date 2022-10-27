@@ -20,6 +20,8 @@ Pour faire bref :
 
 La conception du site à également suivi une volonté de choisir un design simple et _responsive_. Plusieurs feuilles de styles sont associées à des tailles d'écran différents. Les couleurs de la page suivent les couleurs des sites institutionnels et deux versions existent : un mode clair et un mode sombre.
 
+Les logos non associés à des associations, logiciels ou à l'école sont issus du site [Font Awesome](https://fontawesome.com/search).
+
 ## Environnement de compilation
 
 Pour mettre à jours le site, clonez le projet sur votre PC.

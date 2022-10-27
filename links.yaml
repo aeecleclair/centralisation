@@ -25,6 +25,21 @@
     icon: centrale.webp
     url: https://campus.ec-lyon.fr
 
+  - name: Gitlab
+    description: L'instance Gitlab de l'école est un serveur de dépôt de code et de collaboration interne à Centrale Lyon. Elle permet d'héberger des projets d'enseignement ou de recherche.
+    icon: gitlab.svg
+    url: https://gitlab.ec-lyon.fr
+
+  - name: Compétences
+    description: Le site des compétences, actuellement en version démo, recense les évaluations des professeurs et donne accès à un récapitulatif. L'accès nécessite d'être connecté au réseau interne de l'école ou au VPN.
+    icon: centrale.webp
+    url: https://demo-competences.servint.ec-lyon.fr/
+
+  - name: Conférences
+    description: Le site des conférences permet de retrouver le planning des conférences à venir à l'école, utile pour valider l'UE PRO. L'accès nécessite d'être connecté au réseau interne de l'école ou au VPN.
+    icon: person-chalkboard-solid.svg
+    url: https://conf.ec-lyon.fr
+
   - name: Plan
     description:
       Le plan du campus pour ne pas perdre son temps à chercher le J12 ou
