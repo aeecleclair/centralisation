@@ -79,13 +79,13 @@ Sites associatifs:
 Service d'ÉCLAIR:
   - name: Rallly
     description:
-      Alternative à Doodle et Framadate hébergé sur le serveur d'Eclair
+      Alternative à Doodle et Framadate hébergé sur le serveur d'Éclair
     icon: rallly.png
     url: https://date.eclair.ec-lyon.fr/fr
   
   - name: HedgeDoc
     description:
-      Editeur collaboratif pour faire des Markdown hébergé sur le serveur d'Eclair
+      Editeur collaboratif pour faire des Markdown hébergé sur le serveur d'Éclair
     icon: hedgedoc.webp
     url: https://hedgedoc.eclair.ec-lyon.fr
 
