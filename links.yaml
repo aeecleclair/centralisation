@@ -48,7 +48,7 @@
     invert-on-dark: true
     url: https://www.ec-lyon.fr/sites/default/files/plan_campus_centrale_lyon_2021_web_0.pdf
 
-Liens associatifs:
+Sites associatifs:
   - name: MyECL
     description:
       "MyECL est une plateforme dédiée à l'associatif centralien, on y trouve divers outils :
@@ -62,7 +62,6 @@ Liens associatifs:
     icon: pixels.svg
     url: https://centrale-lyon.1year1book.com/
 
-Sites associatifs:
   - name: Commuz'
     description:
       La Commuz' est une comédie musicale organisée chaque année par une équipe de 80 étudiants
@@ -76,6 +75,19 @@ Sites associatifs:
       qui regroupe plus de 300 participants et bénévoles issus d’écoles d’ingénieurs et de commerce françaises.
     icon: raid.webp
     url: https://raid.myecl.fr/
+
+Service d'ÉCLAIR:
+  - name: Rallly
+    description:
+      Alternative à Doodle et Framadate hébergé sur le serveur d'Éclair
+    icon: rallly.png
+    url: https://date.eclair.ec-lyon.fr/fr
+  
+  - name: HedgeDoc
+    description:
+      Editeur collaboratif pour faire des Markdown hébergé sur le serveur d'Éclair
+    icon: hedgedoc.webp
+    url: https://hedgedoc.eclair.ec-lyon.fr
 
 Réseaux sociaux:
   - name: FB - BDL
