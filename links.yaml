@@ -46,7 +46,7 @@
       le G8.
     icon: map.svg
     invert-on-dark: true
-    url: https://www.ec-lyon.fr/sites/default/files/plan_campus_centrale_lyon_2021_web_0.pdf
+    url: https://www.ec-lyon.fr/sites/default/files/plan_campus_centrale_lyon_2023_web_0.pdf
 
 Sites associatifs:
   - name: MyECL
@@ -76,16 +76,23 @@ Sites associatifs:
     icon: raid.webp
     url: https://raid.myecl.fr/
 
+  - name: Forum Perspectives
+    description:
+      Le Forum Perspectives est le forum de recrutement organisé par l’école Centrale de Lyon
+      et l’école des Mines de Saint-Étienne
+    icon: forum perspectives.png
+    url: https://forum-perspectives.fr/
+
 Service d'ÉCLAIR:
   - name: Rallly
     description:
-      Alternative à Doodle et Framadate hébergé sur le serveur d'Éclair
+      Alternative à Doodle et Framadate hébergé sur le serveur d'ÉCLAIR
     icon: rallly.png
     url: https://date.eclair.ec-lyon.fr/fr
   
   - name: HedgeDoc
     description:
-      Editeur collaboratif pour faire des Markdown hébergé sur le serveur d'Éclair
+      Editeur collaboratif pour faire des Markdown hébergé sur le serveur d'ÉCLAIR
     icon: hedgedoc.webp
     url: https://hedgedoc.eclair.ec-lyon.fr
 
