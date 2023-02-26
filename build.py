@@ -1,3 +1,4 @@
+import json
 import os
 import shutil
 
@@ -24,3 +25,8 @@ with open("./dist/index.html", "w", encoding="utf8") as file:
 
 # Copy the assets directory
 shutil.copytree("./src/assets", "./dist/assets")
+
+# Create a json endpoint for MyEcl
+json = json.dumps(data, ensure_ascii=False)
+with open("./dist/links.json", "w", encoding="utf8") as links_json_file:
+    links_json_file.write(json)
