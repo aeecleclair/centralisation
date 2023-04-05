@@ -38,6 +38,7 @@
   - name: Conférences
     description: Le site des conférences permet de retrouver le planning des conférences à venir à l'école, utile pour valider l'UE PRO. L'accès nécessite d'être connecté au réseau interne de l'école ou au VPN.
     icon: person-chalkboard-solid.svg
+    invert-on-dark: true
     url: https://conf.ec-lyon.fr
 
   - name: Plan
@@ -53,8 +54,7 @@ Sites associatifs:
     description:
       "MyECL est une plateforme dédiée à l'associatif centralien, on y trouve divers outils :
       calendrier, réservation de salle, prêt de matos, panier AMAP..."
-    icon: people.svg
-    invert-on-dark: true
+    icon: myecl.png
     url: https://myecl.fr
 
   - name: 1Year1Book
@@ -81,6 +81,7 @@ Sites associatifs:
       Le Forum Perspectives est le forum de recrutement organisé par l’école Centrale de Lyon
       et l’école des Mines de Saint-Étienne
     icon: forum perspectives.png
+    invert-on-dark: true
     url: https://forum-perspectives.fr/
 
 Services d'ÉCLAIR:
@@ -90,6 +91,18 @@ Services d'ÉCLAIR:
     icon: rallly.png
     url: https://date.eclair.ec-lyon.fr/fr
   
+  - name: Ecloud
+    description:
+      Service de cloud fourni sur demande aux associations et hébergé sur le serveur d'ÉCLAIR
+    icon: ecloud.png
+    url: https://ecloud.myecl.fr
+
+  - name: Wiki
+    description:
+      Wiki fourni sur demande aux associations et hébergé sur le serveur d'ÉCLAIR
+    icon: wiki.png
+    url: https://wiki.myecl.fr
+
   - name: HedgeDoc
     description:
       Editeur collaboratif pour faire des Markdown hébergé sur le serveur d'ÉCLAIR
