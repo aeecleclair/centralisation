@@ -25,42 +25,59 @@
     icon: centrale.webp
     url: https://campus.ec-lyon.fr
 
-  - name: Gitlab
-    description: L'instance Gitlab de l'école est un serveur de dépôt de code et de collaboration interne à Centrale Lyon. Elle permet d'héberger des projets d'enseignement ou de recherche.
-    icon: gitlab.svg
-    url: https://gitlab.ec-lyon.fr
-
-  - name: Compétences
-    description: Le site des compétences, actuellement en version démo, recense les évaluations des professeurs et donne accès à un récapitulatif. L'accès nécessite d'être connecté au réseau interne de l'école ou au VPN.
-    icon: centrale.webp
-    url: https://demo-competences.servint.ec-lyon.fr/
-
-  - name: Conférences
-    description: Le site des conférences permet de retrouver le planning des conférences à venir à l'école, utile pour valider l'UE PRO. L'accès nécessite d'être connecté au réseau interne de l'école ou au VPN.
-    icon: person-chalkboard-solid.svg
-    invert-on-dark: true
-    url: https://conf.ec-lyon.fr
-
-  - name: Plan
+  - name: Plan PDF
     description:
       Le plan du campus pour ne pas perdre son temps à chercher le J12 ou
       le G8.
     icon: map.svg
     invert-on-dark: true
     url: https://www.ec-lyon.fr/sites/default/files/plan_campus_centrale_lyon_2023_web_0.pdf
+  
+  - name: Plan interactif
+    description:
+      Le plan du campus si vous cherchez un service de l'école.
+    icon: interactif.png
+    invert-on-dark: true
+    url: https://umap.openstreetmap.fr/fr/map/services-du-campus-de-lecole-centrale-de-lyon_499828
 
-Sites associatifs:
+Services d'ÉCLAIR:
   - name: MyECL
     description:
       "MyECL est une plateforme dédiée à l'associatif centralien, on y trouve divers outils :
       calendrier, réservation de salle, prêt de matos, panier AMAP..."
     icon: myecl.png
     url: https://myecl.fr
+  
+  - name: ECLoud
+    description:
+      Service de cloud fourni sur demande aux associations et hébergé sur le serveur d'ÉCLAIR
+    icon: ecloud.png
+    url: https://ecloud.myecl.fr
 
-  - name: 1Year1Book
+  - name: Wiki
+    description:
+      Wiki fourni sur demande aux associations et hébergé sur le serveur d'ÉCLAIR
+    icon: wiki.png
+    url: https://wiki.myecl.fr
+
+  - name: Rallly
+    description:
+      Alternative à Doodle et Framadate hébergé sur le serveur d'ÉCLAIR
+    icon: rallly.png
+    url: https://date.eclair.ec-lyon.fr/fr
+
+  - name: HedgeDoc
+    description:
+      Editeur collaboratif pour faire des Markdown hébergé sur le serveur d'ÉCLAIR
+    icon: hedgedoc.webp
+    url: https://hedgedoc.eclair.ec-lyon.fr
+
+Sites associatifs:
+
+  - name: Piwigo
     description: Toutes les photos et vidéos des évènements sont ici !
     icon: pixels.svg
-    url: https://centrale-lyon.1year1book.com/
+    url: https://piwigo.myecl.fr
 
   - name: Commuz'
     description:
@@ -83,31 +100,6 @@ Sites associatifs:
     icon: forum perspectives.png
     invert-on-dark: true
     url: https://forum-perspectives.fr/
-
-Services d'ÉCLAIR:
-  - name: Rallly
-    description:
-      Alternative à Doodle et Framadate hébergé sur le serveur d'ÉCLAIR
-    icon: rallly.png
-    url: https://date.eclair.ec-lyon.fr/fr
-  
-  - name: Ecloud
-    description:
-      Service de cloud fourni sur demande aux associations et hébergé sur le serveur d'ÉCLAIR
-    icon: ecloud.png
-    url: https://ecloud.myecl.fr
-
-  - name: Wiki
-    description:
-      Wiki fourni sur demande aux associations et hébergé sur le serveur d'ÉCLAIR
-    icon: wiki.png
-    url: https://wiki.myecl.fr
-
-  - name: HedgeDoc
-    description:
-      Editeur collaboratif pour faire des Markdown hébergé sur le serveur d'ÉCLAIR
-    icon: hedgedoc.webp
-    url: https://hedgedoc.eclair.ec-lyon.fr
 
 Réseaux sociaux:
   - name: FB - BDL
@@ -152,14 +144,6 @@ Autres:
     invert-on-dark: true
     url: https://scolarite.ec-lyon.fr
 
-  - name: DSI
-    description:
-      Le site de la DSI regroupe des guides pour se connecter à internet, utiliser le VPN
-      ou pour installer et utiliser les logiciels utiles (Matlab, Zoom...).
-    icon: dsi.svg
-    invert-on-dark: true
-    url: https://dsi.ec-lyon.fr
-
   - name: Bibliothèque
     description:
       Le site de la Bibliothèque Universitaire permet de réserver un livre, vérifier
@@ -173,3 +157,27 @@ Autres:
       Zoom sans contrainte ni en temps ni en nombre de participants.
     icon: zoom.webp
     url: https://ec-lyon-fr.zoom.us/
+
+  - name: Gitlab
+    description: L'instance Gitlab de l'école est un serveur de dépôt de code et de collaboration interne à Centrale Lyon. Elle permet d'héberger des projets d'enseignement ou de recherche.
+    icon: gitlab.svg
+    url: https://gitlab.ec-lyon.fr
+
+  - name: Compétences
+    description: Le site des compétences, actuellement en version démo, recense les évaluations des professeurs et donne accès à un récapitulatif. L'accès nécessite d'être connecté au réseau interne de l'école ou au VPN.
+    icon: centrale.webp
+    url: https://demo-competences.servint.ec-lyon.fr/
+
+  - name: Conférences
+    description: Le site des conférences permet de retrouver le planning des conférences à venir à l'école, utile pour valider l'UE PRO. L'accès nécessite d'être connecté au réseau interne de l'école ou au VPN.
+    icon: person-chalkboard-solid.svg
+    invert-on-dark: true
+    url: https://conf.ec-lyon.fr
+
+  - name: DSI
+    description:
+      Le site de la DSI regroupe des guides pour se connecter à internet, utiliser le VPN
+      ou pour installer et utiliser les logiciels utiles (Matlab, Zoom...).
+    icon: dsi.svg
+    invert-on-dark: true
+    url: https://dsi.ec-lyon.fr
