@@ -135,6 +135,12 @@ Réseaux sociaux:
     icon: bds.webp
     url: https://www.instagram.com/bds_ecl/
 
+  - name : Insta Planet&Co
+    description: Suis l'actualité de l'association Planet&Co sur son compte Instagram !
+    icon: planet.png
+    url: https://www.instagram.com/planetandcoecl/
+    invert-on-dark: true
+
 Autres:
   - name: Scolarité
     description:
