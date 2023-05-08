@@ -139,7 +139,6 @@ Réseaux sociaux:
     description: Suis l'actualité de l'association Planet&Co sur son compte Instagram !
     icon: planet.png
     url: https://www.instagram.com/planetandcoecl/
-    invert-on-dark: true
 
 Autres:
   - name: Scolarité
