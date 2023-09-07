@@ -72,6 +72,7 @@ Services d'ÉCLAIR:
     icon: hedgedoc.webp
     url: https://hedgedoc.eclair.ec-lyon.fr
 
+
 Sites associatifs:
 
   - name: Piwigo
@@ -92,6 +93,13 @@ Sites associatifs:
       qui regroupe plus de 300 participants et bénévoles issus d’écoles d’ingénieurs et de commerce françaises.
     icon: raid.webp
     url: https://raid.myecl.fr/
+
+  - name: Bazar
+    description:
+      Le Bazar est le club de jeux de société et de jeux vidéo, il organise un Souk tous les vendredis soir où chacun
+      se retrouve pour jouer à des jeux entre amis.
+    icon: bazar.png
+    url: https://bazarization.eclair.ec-lyon.fr/
 
   - name: Forum Perspectives
     description:
