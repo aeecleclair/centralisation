@@ -60,6 +60,14 @@ Services d'ÉCLAIR:
     icon: wiki.png
     url: https://wiki.myecl.fr
 
+  - name: POUGNE
+    description:
+      "Service de gestion de projet hébergé sur le serveur d'ÉCLAIR
+      (Project Organiser and Uniform Gestion Network for Engineers)"
+    icon: pougne.png
+    url: https://project.myecl.fr
+    invert-on-dark: true
+
   - name: Rallly
     description:
       Alternative à Doodle et Framadate hébergé sur le serveur d'ÉCLAIR
