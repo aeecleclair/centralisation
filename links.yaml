@@ -185,9 +185,10 @@ Autres:
     url: https://gitlab.ec-lyon.fr
 
   - name: Compétences
-    description: Le site des compétences, actuellement en version démo, recense les évaluations des professeurs et donne accès à un récapitulatif. L'accès nécessite d'être connecté au réseau interne de l'école ou au VPN.
-    icon: centrale.webp
-    url: https://demo-competences.servint.ec-lyon.fr/
+    description: Le site des compétences, recense les évaluations des professeurs et donne accès à un récapitulatif. L'accès nécessite d'être connecté au réseau interne de l'école ou au VPN.
+    icon: competence.png
+    invert-on-dark: true
+    url: https://competences.ec-lyon.fr/
 
   - name: Conférences
     description: Le site des conférences permet de retrouver le planning des conférences à venir à l'école, utile pour valider l'UE PRO. L'accès nécessite d'être connecté au réseau interne de l'école ou au VPN.
