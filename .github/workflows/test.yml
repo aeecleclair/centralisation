@@ -31,7 +31,7 @@ jobs:
       # Else the step will modify the comment
       # The created or modified comment id will be available as `steps.sendcomment.outputs.comment-id`
       - name: Building comment
-        uses: peter-evans/create-or-update-comment@v3
+        uses: peter-evans/create-or-update-comment@v4
         id: sendcomment
         with:
           comment-id: ${{ steps.searchcomment.outputs.comment-id }}
@@ -72,7 +72,7 @@ jobs:
 
       # Create a new comment or modify the existing one
       - name: Success comment
-        uses: peter-evans/create-or-update-comment@v3
+        uses: peter-evans/create-or-update-comment@v4
         with:
           comment-id: ${{ steps.sendcomment.outputs.comment-id }}
           issue-number: ${{ github.event.pull_request.number }}
@@ -85,7 +85,7 @@ jobs:
       # This action will only be executed if the workflow failed
       - name: Failure comment
         if: failure()
-        uses: peter-evans/create-or-update-comment@v3
+        uses: peter-evans/create-or-update-comment@v4
         with:
           comment-id: ${{ steps.sendcomment.outputs.comment-id }}
           issue-number: ${{ github.event.pull_request.number }}
