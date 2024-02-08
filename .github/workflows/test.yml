@@ -20,7 +20,7 @@ jobs:
       # If this workflow already commented in the PR, we search to modify it instead of creating a new one
       # If the step find the comment, its identifier will be available as `steps.searchcomment.outputs.comment-id`
       - name: Find Github action comment
-        uses: peter-evans/find-comment@v2
+        uses: peter-evans/find-comment@v3
         id: searchcomment
         with:
           issue-number: ${{ github.event.pull_request.number }}
