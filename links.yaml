@@ -72,7 +72,7 @@ Services d'ÉCLAIR:
     description:
       Alternative à Doodle et Framadate hébergé sur le serveur d'ÉCLAIR
     icon: rallly.png
-    url: https://date.eclair.ec-lyon.fr/fr
+    url: https://date.myecl.fr
 
   - name: HedgeDoc
     description:
