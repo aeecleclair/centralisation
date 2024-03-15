@@ -43,6 +43,7 @@
 
     <link rel="stylesheet" href="assets/stylesheets/small.css" />
 
+    <link rel="stylesheet" href="assets/stylesheets/test.css" />
     <link
       rel="stylesheet"
       media="only screen and (min-width: 600px)"
@@ -76,51 +77,59 @@
     <header>
       <h1>Centralisation</h1>
     </header>
+
     <div id="content">
-      <div id="main-links">
-        {% for category_name in main_page %}
-        <h3>{{ category_name.name }}</h3>
-        <div id="secondary-links" class="links-cluster">
-          {% for link in category_name.children %}
-          <div class="link">
-            <div class="link-modal">
-              <!-- Modal content -->
-              <div class="modal-content">
-                <button class="close-button">&times;</button>
-                <div class="modal-header">
-                  <h3>{{ link.name }}</h3>
-                </div>
-                <div class="modal-body">
-                  <p>{{ link.description }}</p>
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="go-out-button"
-                    onclick="window.location='{{link.url}}'"
-                  >
-                    Visiter
-                  </button>
+      <div id="card" class="card">
+        {% for page in pages %}
+        <button onclick="Flip()" class="flip-button-{{ page.side }}">
+          Retourner
+        </button>
+        <div class="flip-div-{{ page.side }}">
+          <h1>{{ page.name }}</h1>
+          {% for category_name in page.children %}
+          <h2>{{ category_name.name }}</h2>
+          <div id="secondary-links" class="links-cluster">
+            {% for link in category_name.children %}
+            <div class="link">
+              <div class="link-modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <button class="close-button">&times;</button>
+                  <div class="modal-header">
+                    <h3>{{ link.name }}</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p>{{ link.description }}</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="go-out-button"
+                      onclick="window.location='{{link.url}}'"
+                    >
+                      Visiter
+                    </button>
+                  </div>
                 </div>
               </div>
+              <div class="link-box">
+                <a class="link-clickable-region" href="{{link.url}}">
+                  <div class="link-icon">
+                    <img src="assets/icons/{{ link.icon }}" alt="Icône de
+                    {{link.name}}" {{ 'class=invert-on-dark' if "invert-on-dark"
+                    in link and link["invert-on-dark"]}} />
+                  </div>
+                  <span class="link-text">{{ link.name }}</span>
+                </a>
+                <button class="link-information">i</button>
+              </div>
             </div>
-            <div class="link-box">
-              <a class="link-clickable-region" href="{{link.url}}">
-                <div class="link-icon">
-                  <img src="assets/icons/{{ link.icon }}" alt="Icône de
-                  {{link.name}}" {{ 'class=invert-on-dark' if "invert-on-dark"
-                  in link and link["invert-on-dark"]}} />
-                </div>
-                <span class="link-text">{{ link.name }}</span>
-              </a>
-              <button class="link-information">i</button>
-            </div>
+            {% endfor %}
           </div>
           {% endfor %}
         </div>
         {% endfor %}
       </div>
-    </div>
     </div>
   </body>
   <footer>
@@ -131,7 +140,6 @@
   </footer>
   <script>
     let links = document.getElementsByClassName("link");
-
     for (const link of links) {
       let link_information_btn = link.querySelector(".link-information");
       let link_modal = link.querySelector(".link-modal");
@@ -153,6 +161,10 @@
           link_modal.style.display = "none";
         }
       };
+    }
+    function Flip() {
+      var card = document.getElementById("card");
+      card.classList.toggle("do-flip");
     }
   </script>
 </html>

@@ -13,18 +13,16 @@ os.mkdir("./dist")
 with open("links2.yaml", "r", encoding="utf8") as links_file:
     data = yaml.load(links_file, Loader=yaml.CLoader)
 
+print(data)
 jinja_env = Environment(
     loader=FileSystemLoader("./src"), autoescape=select_autoescape()
 )
-other_pages = [{"link": page["link"], "name": page["name"]} for page in data]
-for page in data:
-    file_path = page["link"] + ".html"
-    page_template = jinja_env.get_template("index2.html")
-    page_render = page_template.render(links=page["children"], other_pages=other_pages)
+page_template = jinja_env.get_template("index3.html")
+page_render = page_template.render(pages=data)
 
-    # Save the new index file
-    with open("./dist/" + file_path, "w", encoding="utf8") as file:
-        file.write(page_render)
+# Save the new index file
+with open("./dist/index.html", "w", encoding="utf8") as file:
+    file.write(page_render)
 
 # Copy the assets directory
 shutil.copytree("./src/assets", "./dist/assets")

@@ -1,5 +1,6 @@
 - name: Page principale
   link: index
+  side: front
   children:
     - name: École
       children:
@@ -80,8 +81,57 @@
           icon: hedgedoc.webp
           url: https://hedgedoc.eclair.ec-lyon.fr
 
-- name: Sites associatifs
-  link: sites_associatifs
+    - name: Autres
+      children:
+        - name: Scolarité
+          description:
+            Les bulletins de notes de chaque semestre et le certificat de scolarité figurent sur Scolarité. Attention,
+            le VPN de l'école est nécessaire pour y accéder.
+          icon: student.svg
+          invert-on-dark: true
+          url: https://scolarite.ec-lyon.fr
+
+        - name: Bibliothèque
+          description:
+            Le site de la Bibliothèque Universitaire permet de réserver un livre, vérifier
+            les disponibilités ou passer une demande d'achat. Une importante collection de ressources numériques est aussi accessible depuis ce portail.
+          icon: bibli.webp
+          url: https://bibli.ec-lyon.fr
+
+        - name: Zoom
+          description:
+            L'instance Zoom de l'école permet à tous de programmer des réunions
+            Zoom sans contrainte ni en temps ni en nombre de participants.
+          icon: zoom.webp
+          url: https://ec-lyon-fr.zoom.us/
+
+        - name: Gitlab
+          description: L'instance Gitlab de l'école est un serveur de dépôt de code et de collaboration interne à Centrale Lyon. Elle permet d'héberger des projets d'enseignement ou de recherche.
+          icon: gitlab.svg
+          url: https://gitlab.ec-lyon.fr
+
+        - name: Compétences
+          description: Le site des compétences, recense les évaluations des professeurs et donne accès à un récapitulatif. L'accès nécessite d'être connecté au réseau interne de l'école ou au VPN.
+          icon: competence.png
+          invert-on-dark: true
+          url: https://competences.ec-lyon.fr/
+
+        - name: Conférences
+          description: Le site des conférences permet de retrouver le planning des conférences à venir à l'école, utile pour valider l'UE PRO. L'accès nécessite d'être connecté au réseau interne de l'école ou au VPN.
+          icon: person-chalkboard-solid.svg
+          invert-on-dark: true
+          url: https://conf.ec-lyon.fr
+
+        - name: DSI
+          description:
+            Le site de la DSI regroupe des guides pour se connecter à internet, utiliser le VPN
+            ou pour installer et utiliser les logiciels utiles (Matlab, Zoom...).
+          icon: dsi.svg
+          invert-on-dark: true
+          url: https://dsi.ec-lyon.fr
+
+- name: Liens associatifs
+  side: back
   children:
     - name: Sites
     - children:
@@ -118,50 +168,3 @@
           icon: forum perspectives.png
           invert-on-dark: true
           url: https://forum-perspectives.fr/
-
-- name: Réseaux sociaux
-  link: reseaux_sociaux
-  children:
-    - name: Réseaux
-    - children:
-        - name: FB - BDL
-          description:
-            À la recherche de ta izly, ta chaussure gauche ou encore tes souvenirs
-            ? BDL permet la communication entre les élèves sur tous les sujets du quotidien
-          icon: "facebook.svg"
-          invert-on-dark: true
-          url: https://www.facebook.com/groups/1524567274449574
-
-        - name: FB - AQH
-          description:
-            AQH ?! est le groupe Facebook réservé à la promotion des évènements
-            associatifs à l'école.  On y trouve par exemple des annonces pendant les campagnes,
-            des organisations de petit-dej, des week-ends BDS, des semaines 1A etc.
-          icon: facebook.svg
-          invert-on-dark: true
-          url: https://www.facebook.com/groups/AQHAQHAQH
-
-        - name: FB - MBP !
-          description: Mamie Bons Plans ! est réservé à la promotion des partenariats centraliens.
-          icon: facebook.svg
-          invert-on-dark: true
-          url: https://www.facebook.com/groups/mamiebonsplans
-
-        - name: Instagram BDE
-          description: Suis l'actualité associative de l'école sur le compte Instagram du BDE !
-          icon: bde.webp
-          url: https://www.instagram.com/bdecentralelyon/
-
-        - name: Instagram BDS
-          description: Suis l'actualité sportive de l'école sur le compte Instagram du BDS !
-          icon: bds.webp
-          url: https://www.instagram.com/bds_ecl/
-
-        - name: Insta Planet&Co
-          description: Suis l'actualité de l'association Planet&Co sur son compte Instagram !
-          icon: planet.png
-          url: https://www.instagram.com/planetandcoecl/
-
-- name: Autres sites
-  link: autres
-  children: []
