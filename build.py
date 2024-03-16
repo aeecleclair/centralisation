@@ -13,7 +13,6 @@ os.mkdir("./dist")
 with open("links.yaml", "r", encoding="utf8") as links_file:
     data = yaml.load(links_file, Loader=yaml.CLoader)
 
-print(data)
 jinja_env = Environment(
     loader=FileSystemLoader("./src"), autoescape=select_autoescape()
 )
@@ -28,8 +27,9 @@ with open("./dist/index.html", "w", encoding="utf8") as file:
 shutil.copytree("./src/assets", "./dist/assets")
 
 # Create a json endpoint for MyEcl
-json_dumped = json.dumps(data, ensure_ascii=False)
-json2 = json.dumps(data, indent=2)
-print(json2)
+first_page = data[0]["children"]
+parsed_data = [{section["name"]: section["children"]} for section in first_page]
+json_dumped = json.dumps(parsed_data, ensure_ascii=False)
+print(parsed_data)
 with open("./dist/links.json", "w", encoding="utf8") as links_json_file:
     links_json_file.write(json_dumped)
