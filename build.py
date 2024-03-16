@@ -30,6 +30,5 @@ shutil.copytree("./src/assets", "./dist/assets")
 first_page = data[0]["children"]
 parsed_data = [{section["name"]: section["children"]} for section in first_page]
 json_dumped = json.dumps(parsed_data, ensure_ascii=False)
-print(parsed_data)
 with open("./dist/links.json", "w", encoding="utf8") as links_json_file:
     links_json_file.write(json_dumped)
