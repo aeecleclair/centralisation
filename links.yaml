@@ -134,34 +134,74 @@
   id: assos
   side: back
   children:
-    - name: Template
-    - children:
-        - name: Name
-          description: Description de l'association
-          icon: lien du ficher image
-          url: lien externe
+    - name: Bazar
+      children:
+        - name: Discord
+          description: Discord pour tous les étudiant de Centrale fan de jeux, que ce soit des jeux de société ou des jeux vidéo.
+          icon: discord.png
+          invert-on-dark: true
+          url: https://discord.gg/c2n6G7MURH
 
+        - name: Facebook
+          description: Page Facebook de l'association Centrale Lyon Bazar.
+          icon: facebook.svg
+          invert-on-dark: true
+          url: https://www.facebook.com/BazarCentraleLyon
+
+        - name: Commande Souk
+          description: Cagnote pour la commande de pizzas pour le Souk (livraison vers 21h).
+          icon: pizza.png
+          url: https://collecte.io/commande-de-nourriture-pour-le-souk-1912781/fr
+
+    - name: BDE
+      children:
+        - name: FB - AQH
+          description:
+            AQH ?! est le groupe Facebook réservé à la promotion des évènements
+            associatifs à l'école.  On y trouve par exemple des annonces pendant les campagnes,
+            des organisations de petit-dej, des week-ends BDS, des semaines 1A etc.
+          icon: facebook.svg
+          invert-on-dark: true
+          url: https://www.facebook.com/groups/AQHAQHAQH
+
+        - name: FB - MBP !
+          description: Mamie Bons Plans ! est réservé à la promotion des partenariats centraliens.
+          icon: facebook.svg
+          invert-on-dark: true
+          url: https://www.facebook.com/groups/mamiebonsplans
+
+        - name: Instagram BDE
+          description: Suis l'actualité associative de l'école sur le compte Instagram du BDE !
+          icon: bde.webp
+          url: https://www.instagram.com/bdecentralelyon/
+
+    - name: BDL
+      children:
+        - name: FB - BDL
+          description:
+            À la recherche de ta izly, ta chaussure gauche ou encore tes souvenirs
+            ? BDL permet la communication entre les élèves sur tous les sujets du quotidien
+          icon: "facebook.svg"
+          invert-on-dark: true
+          url: https://www.facebook.com/groups/1524567274449574
+
+    - name: BDS
+      children:
+        - name: Instagram BDS
+          description: Suis l'actualité sportive de l'école sur le compte Instagram du BDS !
+          icon: bds.webp
+          url: https://www.instagram.com/bds_ecl/
+
+    - name: Commuz'
+      children:
         - name: Commuz'
           description:
             La Commuz' est une comédie musicale organisée chaque année par une équipe de 80 étudiants
             de l'École Centrale de Lyon et de l'emlyon business school.
           icon: commuz.svg
           url: https://commuz.fr/
-
-        - name: RAID
-          description:
-            Le Raid Centrale Lyon est un événement organisé chaque année sur un weekend d’octobre
-            qui regroupe plus de 300 participants et bénévoles issus d’écoles d’ingénieurs et de commerce françaises.
-          icon: raid.webp
-          url: https://raid.myecl.fr/
-
-        - name: Bazar
-          description:
-            Le Bazar est le club de jeux de société et de jeux vidéo, il organise un Souk tous les vendredis soir où chacun
-            se retrouve pour jouer à des jeux entre amis.
-          icon: bazar.png
-          url: https://bazarization.eclair.ec-lyon.fr/
-
+    - name: Forum Perspectives
+      children:
         - name: Forum Perspectives
           description:
             Le Forum Perspectives est le forum de recrutement organisé par l’école Centrale de Lyon
@@ -169,3 +209,33 @@
           icon: forum perspectives.png
           invert-on-dark: true
           url: https://forum-perspectives.fr/
+
+    - name: Pixel
+      children:
+        - name: Piwigo
+          description: Toutes les photos et vidéos des évènements sont ici !
+          icon: pixels.svg
+          url: https://piwigo.myecl.fr
+
+    - name: Planet
+      children:
+        - name: Insta Planet&Co
+          description: Suis l'actualité de l'association Planet&Co sur son compte Instagram !
+          icon: planet.png
+          url: https://www.instagram.com/planetandcoecl/
+
+    - name: RAID
+      children:
+        - name: RAID
+          description:
+            Le Raid Centrale Lyon est un événement organisé chaque année sur un weekend d’octobre
+            qui regroupe plus de 300 participants et bénévoles issus d’écoles d’ingénieurs et de commerce françaises.
+          icon: raid.webp
+          url: https://raid.myecl.fr/
+# Template pour l'ajout des liens d'une asso
+#    - name: Nom de l'asso
+#    - children:
+#        - name: Nom du lien
+#          description: Description du lien
+#          icon: lien du ficher image
+#          url: lien externe

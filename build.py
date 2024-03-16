@@ -28,6 +28,8 @@ with open("./dist/index.html", "w", encoding="utf8") as file:
 shutil.copytree("./src/assets", "./dist/assets")
 
 # Create a json endpoint for MyEcl
-json = json.dumps(data, ensure_ascii=False)
+json_dumped = json.dumps(data, ensure_ascii=False)
+json2 = json.dumps(data, indent=2)
+print(json2)
 with open("./dist/links.json", "w", encoding="utf8") as links_json_file:
-    links_json_file.write(json)
+    links_json_file.write(json_dumped)
