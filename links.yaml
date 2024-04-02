@@ -60,6 +60,12 @@ Services d'ÉCLAIR:
     icon: wiki.png
     url: https://wiki.myecl.fr
 
+  - name: Stirling PDF
+    description:
+      Outil de manipulation de PDF hébergé sur le serveur d'ÉCLAIR
+    icon: stirling_pdf.svg
+    url: https://pdf.myecl.fr
+
   - name: POUGNE
     description:
       "Service de gestion de projet hébergé sur le serveur d'ÉCLAIR
