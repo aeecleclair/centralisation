@@ -60,10 +60,10 @@ Services d'ÉCLAIR:
     icon: wiki.png
     url: https://wiki.myecl.fr
 
-  - name: Stirling PDF
+  - name: MyPDF
     description:
       Outil de manipulation de PDF hébergé sur le serveur d'ÉCLAIR
-    icon: stirling_pdf.svg
+    icon: PDF_icon.png
     url: https://pdf.myecl.fr
 
   - name: POUGNE
