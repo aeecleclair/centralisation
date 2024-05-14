@@ -161,6 +161,11 @@ Réseaux sociaux:
     description: Suis l'actualité de l'association Planet&Co sur son compte Instagram !
     icon: planet.png
     url: https://www.instagram.com/planetandcoecl/
+  
+  - name : Insta Fouquette
+    description: Suis l'actualité de la Fouquette sur son compte Instagram !
+    icon: fouquette.png
+    url: https://www.instagram.com/lafouquette_ecl/
 
 Autres:
   - name: Scolarité
