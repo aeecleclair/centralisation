@@ -1,12 +1,5 @@
-.main-div {
-  position: relative;
-  display: grid;
-}
 #main,
 #assos {
-  grid-row: 1;
-  grid-column: 1;
-  backface-visibility: hidden;
   transform-style: preserve-3d;
   transition: all 0.8s ease;
 }

@@ -76,16 +76,21 @@
   <body>
     <header id="head-change">
       <h1 id="title">Centralisation</h1>
-      <button onclick="Flip()">&#128259;</button>
+      <button id="minus"><</button>
+      <button id="plus">></button>
     </header>
     <div id="content">
       <div class="main-div">
         {% for page in pages %}
-        <div id="{{ page.id }}" class="{{ page.side }}">
-          {% for category_name in page.children %}
-          <h2>{{ category_name.name }}</h2>
+        <div id="{{ 'page' ~ page.id }}">
+          <h1>{{ page.name }}</h1>
+
+          {% for category in page.children %}
+          <h2 style="{{'color: blue' if not category.static}}">
+            {{ category.name }}
+          </h2>
           <div id="secondary-links" class="links-cluster">
-            {% for link in category_name.children %}
+            {% for link in category.children %}
             <div class="link">
               <div class="link-modal">
                 <!-- Modal content -->
@@ -158,19 +163,28 @@
         }
       };
     }
-    var flipped = 0;
-    function Flip() {
-      var main = document.getElementById("main");
-      var assos = document.getElementById("assos");
-      if (flipped == 0) {
-        main.classList.toggle("back");
-        assos.classList.toggle("back");
-        flipped = 1;
-      } else {
-        assos.classList.toggle("back");
-        main.classList.toggle("back");
-        flipped = 0;
+    var i = 0;
+    let minus = document.getElementById("minus");
+    minus.onclick = () => {
+      if (i > 0) {
+        let current = document.getElementById("page" + i);
+        let next = document.getElementById("page" + (i - 1));
+        current.hidden = true;
+        next.hidden = false;
+        i -= 1;
       }
-    }
+      console.log(i);
+    };
+    let plus = document.getElementById("plus");
+    plus.onclick = () => {
+      if (i < 2) {
+        let current = document.getElementById("page" + i);
+        let next = document.getElementById("page" + (i + 1));
+        current.hidden = true;
+        next.hidden = false;
+        i += 1;
+      }
+      console.log(i);
+    };
   </script>
 </html>
