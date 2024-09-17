@@ -80,6 +80,11 @@ Services d'ÉCLAIR:
     url: https://hedgedoc.eclair.ec-lyon.fr
 
 Sites associatifs:
+
+  - name: Pretendances
+    description : Postulez pour vos assos préférés!
+    icon: pretendances.png
+    url: https://docs.google.com/forms/d/14X-rOeMtSJo0h4pOLJXdORORyvXo07yWbDyrX9fWi-4/edit
   - name: Piwigo
     description: Toutes les photos et vidéos des évènements sont ici !
     icon: pixels.svg
