@@ -1,0 +1,114 @@
+École:
+  - name: Zimbra
+    description: Zimbra est le serveur mail de l'école.
+    icon: mail.svg
+    invert-on-dark: true
+    url: https://messagerie.ec-lyon.fr
+
+  - name: Moodle
+    description:
+      "Sur le moodle on retrouve le contenu des différents cours. Il est
+      divisé en trois serveurs : Pédagogie1, Pédagodie2 et Pédagogie3 pour les cours de 1A, 2A et 3A."
+    icon: moodle.webp
+    url: https://moodle.ec-lyon.fr
+
+  - name: Scol
+    description:
+      Scol permet d'accéder à son planning et déclarer des absences. Dans l'onglet "Offre de Formation",
+      on trouve aussi les descriptions des cours de 2 et 3a.
+    icon: calendar.svg
+    invert-on-dark: true
+    url: https://scol.ec-lyon.fr
+
+  - name: Campus
+    description: Campus est l'intranet de l'école. On y trouve toutes les réponses concernant le parcours à Centrale Lyon, les démarches administratives pour les stages et les départs à l'étranger et bien plus encore.
+    icon: centrale.webp
+    url: https://campus.ec-lyon.fr
+
+  - name: Plan PDF
+    description:
+      Le plan du campus pour ne pas perdre son temps à chercher le J12 ou
+      le G8.
+    icon: map.svg
+    invert-on-dark: true
+    url: https://www.ec-lyon.fr/sites/default/files/plan_campus_centrale_lyon_2023_web_0.pdf
+
+  - name: Plan interactif
+    description: Le plan du campus si vous cherchez un service de l'école.
+    icon: interactif.png
+    invert-on-dark: true
+    url: https://umap.openstreetmap.fr/fr/map/services-du-campus-de-lecole-centrale-de-lyon_499828
+
+  - name: Compétences
+    description: Le site des compétences, recense les évaluations des professeurs et donne accès à un récapitulatif. L'accès nécessite d'être connecté au réseau interne de l'école ou au VPN.
+    icon: competence.png
+    invert-on-dark: true
+    url: https://competences.ec-lyon.fr/
+
+Services d'ÉCLAIR:
+  - name: MyECL
+    description:
+      "MyECL est une plateforme dédiée à l'associatif centralien, on y trouve divers outils :
+      calendrier, réservation de salle, prêt de matos, panier AMAP..."
+    icon: myecl.png
+    url: https://myecl.fr
+
+  - name: ECLoud
+    description: Service de cloud fourni sur demande aux associations et hébergé sur le serveur d'ÉCLAIR
+    icon: ecloud.png
+    url: https://ecloud.myecl.fr
+
+  - name: Wiki
+    description: Wiki fourni sur demande aux associations et hébergé sur le serveur d'ÉCLAIR
+    icon: wiki.png
+    url: https://wiki.myecl.fr
+
+  - name: MyPDF
+    description: Outil de manipulation de PDF hébergé sur le serveur d'ÉCLAIR
+    icon: PDF_icon.png
+    url: https://pdf.myecl.fr
+
+  - name: POUGNE
+    description: "Service de gestion de projet hébergé sur le serveur d'ÉCLAIR
+      (Project Organiser and Uniform Gestion Network for Engineers)"
+    icon: pougne.png
+    url: https://project.myecl.fr
+    invert-on-dark: true
+
+  - name: Rallly
+    description: Alternative à Doodle et Framadate hébergé sur le serveur d'ÉCLAIR
+    icon: rallly.png
+    url: https://date.myecl.fr
+
+  - name: HedgeDoc
+    description: Editeur collaboratif pour faire des Markdown hébergé sur le serveur d'ÉCLAIR
+    icon: hedgedoc.webp
+    url: https://hedgedoc.eclair.ec-lyon.fr
+
+Autres:
+  - name: Bibliothèque
+    description:
+      Le site de la Bibliothèque Universitaire permet de réserver un livre, vérifier
+      les disponibilités ou passer une demande d'achat. Une importante collection de ressources numériques est aussi accessible depuis ce portail.
+    icon: bibli.webp
+    url: https://bibli.ec-lyon.fr
+
+  - name: Zoom
+    description:
+      L'instance Zoom de l'école permet à tous de programmer des réunions
+      Zoom sans contrainte ni en temps ni en nombre de participants.
+    icon: zoom.webp
+    url: https://ec-lyon-fr.zoom.us/
+
+  - name: Gitlab
+    description: L'instance Gitlab de l'école est un serveur de dépôt de code et de collaboration interne à Centrale Lyon. Elle permet d'héberger des projets d'enseignement ou de recherche.
+    icon: gitlab.svg
+    url: https://gitlab.ec-lyon.fr
+
+  - name: DSI
+    description:
+      Le site de la DSI regroupe des guides pour se connecter à internet, utiliser le VPN
+      ou pour installer et utiliser les logiciels utiles (Matlab, Zoom...).
+    icon: dsi.svg
+    invert-on-dark: true
+    url: https://dsi.ec-lyon.fr

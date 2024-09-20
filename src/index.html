@@ -16,30 +16,23 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
 
-    <link rel="stylesheet" href="assets/stylesheets/reset.css">
-
-    <link rel="stylesheet" href="assets/stylesheets/small.css">
-
-    <link rel="stylesheet" media="only screen and (min-width: 600px)" href="assets/stylesheets/medium.css">
-    <link rel="stylesheet" media="only screen and (min-width: 1000px)" href="assets/stylesheets/large.css">
-    <link rel="stylesheet" media="only screen and (min-width: 1400px)" href="assets/stylesheets/extra-large.css">
-
     <link rel="stylesheet" href="assets/stylesheets/light.css">
     <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="assets/stylesheets/dark.css">
-    <script defer data-domain="centralisation.eclair.ec-lyon.fr" src="https://plausible.eclair.ec-lyon.fr/js/script.outbound-links.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer data-domain="centralisation.eclair.ec-lyon.fr"
+        src="https://plausible.eclair.ec-lyon.fr/js/script.outbound-links.js"></script>
 </head>
 
 <body>
-    <header>
+    <header class="w-full" style="background-color: blue;">
         <h1>Centralisation</h1>
     </header>
 
-    <div id="content">
+    <div class="flex flex-col w-full">
         {% for category_name in links %}
-        <h2>{{ category_name }}</h2>
-        <div id="main-links" class="links-cluster">
+        <h2 class="my-4" style="background-color: red;">{{ category_name }}</h2>
+        <div class="px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             {% for link in links[category_name] %}
-            <div class="link">
                 <div class="link-modal">
 
                     <!-- Modal content -->
@@ -59,15 +52,18 @@
                     </div>
 
                 </div>
-                <div class="link-box">
-                    <a class="link-clickable-region" href="{{link.url}}">
-                        <div class="link-icon">
-                            <img src="assets/icons/{{ link.icon }}" alt="Icône de {{link.name}}" {{ 'class=invert-on-dark' if
-                                "invert-on-dark" in link and link["invert-on-dark"]}} />
+
+                <div class="flex rounded-lg items-center" style="background-color: red;">
+                    <a class="flex flex-row items-center rounded-l-lg grow" style="background-color: blueviolet;"
+                        href="{{link.url}}">
+                        <div class="flex items-center justify-center w-20 h-20" style="background-color: blue;">
+                            <img class="h-14 w-14" src="assets/icons/{{ link.icon }}" alt="Icône de {{link.name}}"
+                                {{ 'class=invert-on-dark' if "invert-on-dark" in link and link["invert-on-dark"]}} />
                         </div>
-                        <span class="link-text">{{ link.name }}</span>
+                        <span class="flex-auto text-center">{{ link.name }}</span>
                     </a>
-                    <button class="link-information">i</button>
+                    <button class="w-10 h-10 rounded-full mr-2 link-information"
+                        style="background-color: pink;">i</button>
                 </div>
             </div>
             {% endfor %}
@@ -80,33 +76,5 @@
     </footer>
 
 </body>
-
-<script>
-
-    let links = document.getElementsByClassName("link")
-
-    for (const link of links) {
-        let link_information_btn = link.querySelector(".link-information")
-        let link_modal = link.querySelector(".link-modal")
-        let close_modal_btn = link_modal.querySelector(".close-button")
-
-        // When the user clicks on the "i" button
-        link_information_btn.onclick = function () {
-            link_modal.style.display = "block";
-        }
-
-        // When the user clicks on <span> (x), close the modal
-        close_modal_btn.onclick = function () {
-            link_modal.style.display = "none";
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        link_modal.onclick = function (event) {
-            if (event.target == link_modal) {
-                link_modal.style.display = "none";
-            }
-        }
-    }
-</script>
 
 </html>
