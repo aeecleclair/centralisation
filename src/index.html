@@ -78,4 +78,33 @@
 
 </body>
 
+<script>
+
+    let links = document.getElementsByClassName("links")
+
+    for (let link of links) {
+        let link_information_btn = link.querySelector(".link-information")
+        let link_modal = link.querySelector(".link-modal")
+        let close_modal_btn = link_modal.querySelector(".close-button")
+
+        // When the user clicks on the "i" button
+        link_information_btn.onclick = function () {
+            link_modal.classList.remove('hidden');
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        close_modal_btn.onclick = function () {
+            link_modal.classList.add('hidden');
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        link_modal.onclick = function (event) {
+            if (event.target == link_modal) {
+                link_modal.classList.add('hidden');
+            }
+        }
+    }
+</script>
+
+
 </html>
