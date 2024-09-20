@@ -27,8 +27,8 @@
         src="https://plausible.eclair.ec-lyon.fr/js/script.outbound-links.js"></script>
 </head>
 
-<body style="font-family: 'Poppins', system-ui;" class="text-black">
-    <header class="w-full bg-amber-500 mb-4">
+<body style="font-family: 'Poppins', system-ui;" class="text-black dark:text-white bg-white dark:bg-neutral-800">
+    <header class="w-full mb-4 bg-amber-500 dark:bg-amber-600">
         <h1 class="text-4xl md:text-5xl lg:text-6xl">
             Centralisation</h1>
     </header>
@@ -41,11 +41,13 @@
 
             <div class="links">
 
-                <div class="link-modal hidden fixed inset-0 w-full h-full bg-black/50 flex justify-center items-center">
+                <div
+                    class="z-9 link-modal hidden fixed inset-0 w-full h-full bg-black/50 flex justify-center items-center">
                     <!-- Modal content -->
-                    <div class="modal-content m-4 p-6 rounded-lg text-center max-w-lg w-full relative bg-slate-200">
+                    <div
+                        class="modal-content m-4 p-6 rounded-lg text-center max-w-lg w-full relative bg-slate-200 dark:bg-neutral-900">
                         <button
-                            class="close-button absolute top-2 right-2 w-10 h-10 rounded-full bg-orange-400/50">&times;</button>
+                            class="close-button absolute top-2 right-2 w-10 h-10 rounded-full bg-orange-400/50 dark:bg-amber-600/75">&times;</button>
                         <div class="text-xl font-medium">
                             <h3>{{ link.name }}</h3>
                         </div>
@@ -53,21 +55,22 @@
                             <p>{{ link.description }}</p>
                         </div>
                         <div>
-                            <button class="py-2 px-8 rounded-lg text-center bg-amber-500"
+                            <button class="py-2 px-8 rounded-lg text-center bg-amber-500 dark:bg-amber-600"
                                 onclick="window.location='{{link.url}}'">Visiter</button>
                         </div>
                     </div>
                 </div>
 
-                            <img class="h-14 w-14" src="assets/icons/{{ link.icon }}" alt="Icône de {{link.name}}"
-                                {{ 'class=invert-on-dark' if "invert-on-dark" in link and link["invert-on-dark"]}} />
-                <div class="flex rounded-lg items-center bg-slate-200">
+                <div class="flex rounded-lg items-center bg-slate-200 dark:bg-neutral-900">
                     <a class="flex flex-row items-center rounded-l-lg grow" href="{{link.url}}">
                         <div class="flex items-center justify-center w-20 h-20">
+                            <img class="h-14 w-14 {{ 'dark:invert' if 'invert-on-dark' in link and link['invert-on-dark']}}"
+                                src="assets/icons/{{ link.icon }}" alt="Icône de {{link.name}}" />
                         </div>
                         <span class="flex-auto text-center">{{ link.name }}</span>
                     </a>
-                    <button class="w-10 h-10 rounded-full mr-2 link-information bg-orange-400/50">i</button>
+                    <button
+                        class="w-10 h-10 rounded-full mr-2 link-information bg-orange-400/50 dark:bg-amber-600/75">i</button>
                 </div>
             </div>
             {% endfor %}
@@ -75,7 +78,7 @@
         {% endfor %}
     </div>
 
-    <footer class="text-center bg-amber-500">
+    <footer class="text-center bg-amber-500 dark:bg-amber-600">
         <p class="text-lg">Imaginé et conçu par <a href="https://github.com/aeecleclair" rel="author"><i
                     class="italic underline font-medium">ÉCLAIR</i></a>
         </p>
