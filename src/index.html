@@ -33,24 +33,25 @@
         <h2 class="my-4" style="background-color: red;">{{ category_name }}</h2>
         <div class="px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             {% for link in links[category_name] %}
-                <div class="link-modal">
 
+            <div class="links">
+
+                <div
+                    class="link-modal hidden fixed inset-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center">
                     <!-- Modal content -->
-                    <div class="modal-content">
-                        <button class="close-button">&times;</button>
-                        <div class="modal-header">
-
+                    <div class="modal-content m-4 p-6 rounded-lg  text-center max-w-lg w-full relative">
+                        <button class="close-button absolute top-2 right-2 w-10 h-10 rounded-full">&times;</button>
+                        <div class="">
                             <h3>{{ link.name }}</h3>
                         </div>
-                        <div class="modal-body">
+                        <div class="my-4">
                             <p>{{ link.description }}</p>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="go-out-button"
+                            <button class="p-2 rounded-lg text-center" style="background-color: red;"
                                 onclick="window.location='{{link.url}}'">Visiter</button>
                         </div>
                     </div>
-
                 </div>
 
                 <div class="flex rounded-lg items-center" style="background-color: red;">
