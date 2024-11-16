@@ -79,10 +79,14 @@ Services d'ÉCLAIR:
     icon: hedgedoc.webp
     url: https://hedgedoc.eclair.ec-lyon.fr
 
-Sites associatifs:
+  - name: Overleaf
+    description: Editeur collaboratif en ligne de rapports LaTeX
+    icon: overleaf.svg
+    url: https://overleaf.myecl.fr
 
+Sites associatifs:
   - name: Prétendances
-    description : Postulez pour vos assos préférées!
+    description: Postulez pour vos assos préférées!
     icon: pretendances.png
     url: https://docs.google.com/forms/d/14X-rOeMtSJo0h4pOLJXdORORyvXo07yWbDyrX9fWi-4/edit
   - name: Piwigo
@@ -90,34 +94,12 @@ Sites associatifs:
     icon: pixels.svg
     url: https://piwigo.myecl.fr
 
-  - name: Commuz'
-    description:
-      La Commuz' est une comédie musicale organisée chaque année par une équipe de 80 étudiants
-      de l'École Centrale de Lyon et de l'emlyon business school.
-    icon: commuz.svg
-    url: https://commuz.fr/
-
-  - name: RAID
-    description:
-      Le Raid Centrale Lyon est un événement organisé chaque année sur un weekend d’octobre
-      qui regroupe plus de 300 participants et bénévoles issus d’écoles d’ingénieurs et de commerce françaises.
-    icon: raid.webp
-    url: https://raid.myecl.fr/
-
   - name: Bazar
     description:
       Le Bazar est le club de jeux de société et de jeux vidéo, il organise un Souk tous les vendredis soir où chacun
       se retrouve pour jouer à des jeux entre amis.
     icon: bazar.png
     url: https://bazarization.eclair.ec-lyon.fr/
-
-  - name: Forum Perspectives
-    description:
-      Le Forum Perspectives est le forum de recrutement organisé par l’école Centrale de Lyon
-      et l’école des Mines de Saint-Étienne
-    icon: forum perspectives.png
-    invert-on-dark: true
-    url: https://forum-perspectives.fr/
 
 Réseaux sociaux:
   - name: FB - BDL
@@ -152,21 +134,6 @@ Réseaux sociaux:
     description: Suis l'actualité sportive de l'école sur le compte Instagram du BDS !
     icon: bds.webp
     url: https://www.instagram.com/bds_ecl/
-
-  - name: Insta Planet&Co
-    description: Suis l'actualité de l'association Planet&Co sur son compte Instagram !
-    icon: planet.png
-    url: https://www.instagram.com/planetandcoecl/
-
-  - name: Insta Fouquette
-    description: Suis l'actualité de la Fouquette sur son compte Instagram !
-    icon: fouquette.png
-    url: https://www.instagram.com/lafouquette_ecl/
-
-  - name: Insta Ciné
-    description: Suis l'actualité du Club Ciné sur son compte Instagram !
-    icon: club_cine.png
-    url: https://www.instagram.com/cine_club_ecl
 
 Autres:
   - name: Scolarité
