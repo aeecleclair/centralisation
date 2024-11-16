@@ -35,48 +35,52 @@
 
     <div class="flex flex-col w-full p-3">
         {% for category_name in links %}
-        <h2 class="text-2xl md:text-3xl lg:text-4xl">{{ category_name }}</h2>
-        <div class="my-4 px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-            {% for link in links[category_name] %}
+        <details open>
+            <summary>
+                <h2 class="text-2xl md:text-3xl lg:text-4xl" style="display:inline-block"> {{ category_name }}</h2>
+            </summary>
+            <div class="my-4 px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                {% for link in links[category_name] %}
 
-            <div class="links">
+                <div class="links">
 
-                <div
-                    class="z-50 link-modal hidden fixed inset-0 w-full h-full bg-black/50 flex justify-center items-center">
-                    <!-- Modal content -->
                     <div
-                        class="modal-content m-4 p-6 rounded-lg text-center max-w-lg w-full relative bg-slate-200 dark:bg-neutral-900">
-                        <button
-                            class="close-button absolute top-2 right-2 w-10 h-10 rounded-full bg-orange-400/50 dark:bg-amber-600/75 hover:bg-orange-400/75 dark:hover:bg-amber-600">&times;</button>
-                        <div class="text-xl font-medium">
-                            <h3>{{ link.name }}</h3>
-                        </div>
-                        <div class="my-4 text-justify leading-5">
-                            <p>{{ link.description }}</p>
-                        </div>
-                        <div>
+                        class="z-50 link-modal hidden fixed inset-0 w-full h-full bg-black/50 flex justify-center items-center">
+                        <!-- Modal content -->
+                        <div
+                            class="modal-content m-4 p-6 rounded-lg text-center max-w-lg w-full relative bg-slate-200 dark:bg-neutral-900">
                             <button
-                                class="py-2 px-8 rounded-lg text-center bg-amber-500 dark:bg-amber-600 hover:bg-amber-600 dark:hover:bg-amber-700"
-                                onclick="window.location='{{link.url}}'">Visiter</button>
+                                class="close-button absolute top-2 right-2 w-10 h-10 rounded-full bg-orange-400/50 dark:bg-amber-600/75 hover:bg-orange-400/75 dark:hover:bg-amber-600">&times;</button>
+                            <div class="text-xl font-medium">
+                                <h3>{{ link.name }}</h3>
+                            </div>
+                            <div class="my-4 text-justify leading-5">
+                                <p>{{ link.description }}</p>
+                            </div>
+                            <div>
+                                <button
+                                    class="py-2 px-8 rounded-lg text-center bg-amber-500 dark:bg-amber-600 hover:bg-amber-600 dark:hover:bg-amber-700"
+                                    onclick="window.location='{{link.url}}'">Visiter</button>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div
-                    class="flex rounded-lg items-center bg-slate-200 dark:bg-neutral-900 hover:bg-slate-300 dark:hover:bg-zinc-950">
-                    <a class="flex flex-row items-center rounded-l-lg grow" href="{{link.url}}">
-                        <div class="flex items-center justify-center w-20 h-20">
-                            <img class="h-14 w-14 {{ 'dark:invert' if 'invert-on-dark' in link and link['invert-on-dark']}}"
-                                src="assets/icons/{{ link.icon }}" alt="Icône de {{link.name}}" />
-                        </div>
-                        <span class="flex-auto text-center">{{ link.name }}</span>
-                    </a>
-                    <button
-                        class="w-10 h-10 rounded-full mr-2 link-information bg-orange-400/50 dark:bg-amber-600/75 hover:bg-orange-400/75 dark:hover:bg-amber-600">i</button>
+                    <div
+                        class="flex rounded-lg items-center bg-slate-200 dark:bg-neutral-900 hover:bg-slate-300 dark:hover:bg-zinc-950">
+                        <a class="flex flex-row items-center rounded-l-lg grow" href="{{link.url}}">
+                            <div class="flex items-center justify-center w-20 h-20">
+                                <img class="h-14 w-14 {{ 'dark:invert' if 'invert-on-dark' in link and link['invert-on-dark']}}"
+                                    src="assets/icons/{{ link.icon }}" alt="Icône de {{link.name}}" />
+                            </div>
+                            <span class="flex-auto text-center">{{ link.name }}</span>
+                        </a>
+                        <button
+                            class="w-10 h-10 rounded-full mr-2 link-information bg-orange-400/50 dark:bg-amber-600/75 hover:bg-orange-400/75 dark:hover:bg-amber-600">i</button>
+                    </div>
                 </div>
+                {% endfor %}
             </div>
-            {% endfor %}
-        </div>
+        </details>
         {% endfor %}
     </div>
 
