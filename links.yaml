@@ -168,7 +168,7 @@ Autres:
     description: Le site des conférences permet de retrouver le planning des conférences à venir à l'école, utile pour valider l'UE PRO. L'accès nécessite d'être connecté au réseau interne de l'école ou au VPN.
     icon: person-chalkboard-solid.svg
     invert-on-dark: true
-    url: https://conferences.ec-lyon.fr # marche plus et j'ai pas trouvé le nouveau lien
+    url: https://conferences.ec-lyon.fr
 
   - name: DSI
     description:
