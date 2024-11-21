@@ -85,6 +85,21 @@ Services d'ÉCLAIR:
     icon: hedgedoc.webp
     url: https://hedgedoc.eclair.ec-lyon.fr
 
+  - name: Overleaf
+    description: Editeur collaboratif en ligne de rapports LaTeX
+    icon: overleaf.svg
+    url: https://overleaf.myecl.fr
+
+  - name: Piwigo
+    description: Toutes les photos et vidéos des évènements sont ici !
+    icon: pixels.svg
+    url: https://piwigo.myecl.fr
+
+  - name: Centralassociation
+    description: Agrégateur de lien associatif d'ÉCLAIR
+    icon: centralassociation.svg
+    url: https://assos.myecl.fr
+
 Autres:
   - name: Bibliothèque
     description:
