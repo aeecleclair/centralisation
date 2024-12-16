@@ -8,14 +8,8 @@
     <title>Centralisation</title>
     <meta name="description" content="Agrégateur de liens pour les étudiants de l'École Centrale de Lyon" />
 
-    <!-- Give access to Google search console -->
-    <meta name="google-site-verification" content="zr0xe6RJrvtDwccOO9guGDEK5dUHHZFdofchU6l2We4" />
-
     <link rel="icon" type="image/x-icon" href="assets/favicons/images/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
-    <link rel="stylesheet" href="assets/stylesheet.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,7 +42,7 @@
                     <div
                         class="modal-content m-4 p-6 rounded-lg text-center max-w-lg w-full relative bg-slate-200 dark:bg-neutral-900">
                         <button
-                            class="close-button absolute top-2 right-2 w-10 h-10 rounded-full bg-eclair hover:brightness-90 dark:hover:brightness-75">&times;</button>
+                            class="close-button absolute top-2 right-2 w-10 h-10 rounded-full bg-white dark:bg-neutral-700 hover:brightness-90 dark:hover:brightness-75">&times;</button>
                         <div class="text-xl font-medium">
                             <h3>{{ link.name }}</h3>
                         </div>
@@ -73,7 +67,7 @@
                         <span class="flex-auto text-center">{{ link.name }}</span>
                     </a>
                     <button
-                        class="w-10 h-10 rounded-full mr-2 link-information bg-eclair hover:brightness-90 dark:hover:brightness-75">i</button>
+                        class="w-10 h-10 rounded-full mr-2 link-information bg-white dark:bg-neutral-800 hover:brightness-90 dark:hover:brightness-75">i</button>
                 </div>
             </div>
             {% endfor %}
