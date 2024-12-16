@@ -23,12 +23,12 @@
 </head>
 
 <body style="font-family: 'Poppins', system-ui;" class="text-black dark:text-white bg-white dark:bg-neutral-800">
-    <header class="w-full mb-4 bg-eclair">
+    <header class="w-full mb-4 bg-eclair z-50 fixed top-0 left-0">
         <h1 class="text-4xl md:text-5xl lg:text-6xl p-5 text-center">
             Centralisation</h1>
     </header>
 
-    <div class="flex flex-col w-full p-3">
+    <div class="flex flex-col w-full p-3 mt-20 md:mt-24 lg:mt-28">
         {% for category_name in links %}
         <h2 class="text-2xl md:text-3xl lg:text-4xl">{{ category_name }}</h2>
         <div class="my-4 px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
@@ -37,7 +37,7 @@
             <div class="links">
 
                 <div
-                    class="z-50 link-modal hidden fixed inset-0 w-full h-full bg-black/50 flex justify-center items-center">
+                    class="z-40 link-modal hidden fixed inset-0 w-full h-full bg-black/50 flex justify-center items-center">
                     <!-- Modal content -->
                     <div
                         class="modal-content m-4 p-6 rounded-lg text-center max-w-lg w-full relative bg-slate-200 dark:bg-neutral-900">
