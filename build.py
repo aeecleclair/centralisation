@@ -10,7 +10,7 @@ if os.path.exists("./dist"):
 os.mkdir("./dist")
 
 # Build the index file with Jinja2
-with open("links.yaml", "r", encoding="utf8") as links_file:
+with open("links_2.yaml", "r", encoding="utf8") as links_file:
     data = yaml.load(links_file, Loader=yaml.CLoader)
 
 jinja_env = Environment(

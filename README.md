@@ -18,7 +18,7 @@ Pour faire bref :
 - Le script Python `build.py` lit le fichier YAML et construit la page HTML à partir de celui-ci.
 - Le fichier final est enregistré dans le dossier `./dist` aux côtés des feuilles de styles CSS et des images.
 
-La conception du site à également suivi une volonté de choisir un design simple et _responsive_. Plusieurs feuilles de styles sont associées à des tailles d'écran différents. Les couleurs de la page suivent les couleurs des sites institutionnels et deux versions existent : un mode clair et un mode sombre.
+Afin de faciliter la gestion l'adaptabilité de la page en fonction des thèmes et des différentes résolutions d'écrans, la feuille de style de la page est générée avec `tailwind`. 
 
 Les logos non associés à des associations, logiciels ou à l'école sont issus du site [Font Awesome](https://fontawesome.com/search).
 
@@ -39,6 +39,8 @@ cd ./centralisation
 Modifiez le fichier `links.yaml` à votre guise.
 
 Pour construire la page il faut exécuter le script Python. Assurez-vous d'avoir `Python3.9` où supérieur installé avec la librairie `Jinja2` et `PyYAML`. L'utilisation d'un environnement virtuel avec [Poetry](https://python-poetry.org/) permet d'installer ces éléments.
+
+Pour modifier le style de la page, placez le dossier `./src` dans un nouveau projet `tailwind` et modifier les différents éléments avant de [générer une nouvelle feuille de style](https://tailwindcss.com/docs/installation) pour remplacer la précédente.
 
 ## Compilation
 
